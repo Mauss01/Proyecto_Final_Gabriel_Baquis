@@ -3,6 +3,10 @@
  * @author gabri
  */
 public class Pantalla extends javax.swing.JFrame {
+
+    static void Mercado(Jugador jugador, Inventario inventario) {
+        
+    }
     
     /**
      * Creates new form Pantalla
@@ -46,12 +50,16 @@ public class Pantalla extends javax.swing.JFrame {
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        Mapa = new javax.swing.JDialog();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel31 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         BtnInicio = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         jPanel2.setBackground(new java.awt.Color(102, 0, 0));
@@ -59,80 +67,113 @@ public class Pantalla extends javax.swing.JFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/image006-1-no-background.png"))); // NOI18N
         jLabel7.setText("jLabel7");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 40, 220, -1));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 30, 210, -1));
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Reikland.png"))); // NOI18N
         jLabel6.setText("jLabel6");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, -1));
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 90, -1));
 
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Wintertooth.png"))); // NOI18N
         jLabel8.setText("jLabel8");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, -1, -1));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 90, -1));
 
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Bordeleaux_Errant.png"))); // NOI18N
         jLabel9.setText("jLabel9");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, -1, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 90, -1));
 
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/The_Western_Provinces.png"))); // NOI18N
         jLabel10.setText("jLabel10");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, -1, -1));
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 90, -1));
 
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/The_Maggot_Host.png"))); // NOI18N
         jLabel11.setText("jLabel11");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 160, -1, -1));
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 60, 90, -1));
 
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Exiles_of_Khorne.png"))); // NOI18N
         jLabel12.setText("jLabel12");
-        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 160, -1, -1));
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 60, 90, -1));
 
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Oracles_of_Tzeentch.png"))); // NOI18N
         jLabel13.setText("jLabel13");
-        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 160, -1, -1));
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 60, 90, -1));
 
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Seducers_of_Slaanesh.png"))); // NOI18N
         jLabel14.setText("jLabel14");
-        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 160, -1, -1));
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 200, 90, -1));
 
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Daughters_of_the_Forest.png"))); // NOI18N
         jLabel15.setText("jLabel15");
-        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, -1, -1));
+        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 90, -1));
 
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Clan_Angrund.png"))); // NOI18N
         jLabel16.setText("jLabel16");
-        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, -1, -1));
+        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 90, -1));
 
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Knights_of_Caledor.png"))); // NOI18N
         jLabel17.setText("jLabel17");
-        jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, -1, -1));
+        jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 90, -1));
 
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Shadow_Legion.png"))); // NOI18N
         jLabel18.setText("jLabel18");
-        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, -1, -1));
+        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 200, 80, -1));
 
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Harbinger_of_Disaster (1).png"))); // NOI18N
         jLabel19.setText("jLabel19");
-        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 310, -1, -1));
+        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 200, 90, -1));
 
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Clan_Skryre.png"))); // NOI18N
         jLabel20.setText("jLabel20");
-        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 320, -1, -1));
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 340, 90, -1));
 
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/The_Warhost_of_Zharr.png"))); // NOI18N
         jLabel21.setText("jLabel21");
-        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 330, -1, -1));
+        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 340, 90, -1));
 
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Grimgor27Ardboyz.png"))); // NOI18N
         jLabel22.setText("jLabel22");
-        jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 340, -1, -1));
+        jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 340, 90, -1));
 
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Wargrove_of_Woe.png"))); // NOI18N
         jLabel23.setText("jLabel23");
-        jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 520, -1, -1));
+        jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, 90, -1));
 
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Ghosts_of_Pahuax.png"))); // NOI18N
         jLabel24.setText("jLabel24");
-        jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 520, -1, -1));
+        jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 340, 90, -1));
 
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/The_Thousand_Maws.png"))); // NOI18N
         jLabel25.setText("jLabel25");
-        jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 530, -1, -1));
+        jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 480, 90, -1));
 
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Goldtooth.png"))); // NOI18N
         jLabel26.setText("jLabel26");
-        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 530, -1, -1));
+        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 480, 90, -1));
 
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Court_of_Lybaras.png"))); // NOI18N
         jLabel27.setText("jLabel27");
-        jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 530, -1, -1));
+        jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 200, 90, -1));
 
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/The_Awakened.png"))); // NOI18N
         jLabel28.setText("jLabel28");
-        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 530, -1, -1));
+        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 480, 90, -1));
 
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/The_Barrow_Legion.png"))); // NOI18N
         jLabel29.setText("jLabel29");
-        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 530, -1, -1));
+        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 480, 90, -1));
+
+        jLabel2.setFont(new java.awt.Font("Roboto Black", 2, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setText("Para Avanzar en el Juego Debes de Seleccionar una Faccion");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 600, 330, 90));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/abismo-infernal-tormento-tierra-fondo-llena-oscuridad-rocas-aterradoras-fuego-ardiente_344451-6225.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1260, 720));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1250, 710));
 
         javax.swing.GroupLayout DecisionLayout = new javax.swing.GroupLayout(Decision.getContentPane());
         Decision.getContentPane().setLayout(DecisionLayout);
@@ -145,15 +186,29 @@ public class Pantalla extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel3.setBackground(new java.awt.Color(102, 0, 0));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/01hw84f2xeb84mja8b4j.jpg"))); // NOI18N
+        jLabel31.setText("jLabel31");
+        jPanel3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, 800, 640));
+
+        javax.swing.GroupLayout MapaLayout = new javax.swing.GroupLayout(Mapa.getContentPane());
+        Mapa.getContentPane().setLayout(MapaLayout);
+        MapaLayout.setHorizontalGroup(
+            MapaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1280, Short.MAX_VALUE)
+        );
+        MapaLayout.setVerticalGroup(
+            MapaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 740, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 0, 0));
         jPanel1.setMinimumSize(new java.awt.Dimension(1280, 800));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/image006-1-no-background.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 740, 380));
 
         BtnInicio.setBackground(new java.awt.Color(102, 0, 0));
         BtnInicio.setText("Iniciar Juego");
@@ -185,6 +240,10 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 100, -1));
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/logo.png"))); // NOI18N
+        jLabel30.setText("jLabel30");
+        jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 730, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/abismo-infernal-tormento-tierra-fondo-llena-oscuridad-rocas-aterradoras-fuego-ardiente_344451-6225.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -221,11 +280,17 @@ public class Pantalla extends javax.swing.JFrame {
     
     private void BtnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInicioActionPerformed
         // TODO add your handling code here:                
-        d.setVisible(true);
-        d.setSize(this.getSize());
+        Decision.setVisible(true);
+        Decision.setSize(this.getSize());
         
         this.setVisible(false);
     }//GEN-LAST:event_BtnInicioActionPerformed
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
      * @param args the command line arguments
@@ -265,6 +330,7 @@ public class Pantalla extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnInicio;
     private javax.swing.JDialog Decision;
+    private javax.swing.JDialog Mapa;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -288,6 +354,8 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -296,6 +364,6 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
-    private Decicion d = new Decicion();   
 }
