@@ -85,7 +85,51 @@ public class Pantalla extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         Mapa = new javax.swing.JDialog();
         jPanel3 = new javax.swing.JPanel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        MapaGen = new javax.swing.JLabel();
+        MerFalso = new javax.swing.JPanel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        MercadoAmplio = new javax.swing.JDialog();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        Comprar = new javax.swing.JButton();
+        Vender = new javax.swing.JButton();
+        VenderU = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         jLabel31 = new javax.swing.JLabel();
+        CompOb = new javax.swing.JDialog();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        Armaduras = new javax.swing.JButton();
+        Pociones = new javax.swing.JButton();
+        ObMag = new javax.swing.JButton();
+        ObMit = new javax.swing.JButton();
+        Armas = new javax.swing.JButton();
+        jPanel8 = new javax.swing.JPanel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        VendOb = new javax.swing.JDialog();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel81 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         BtnInicio = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
@@ -383,19 +427,353 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(102, 0, 0));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/01hw84f2xeb84mja8b4j.jpg"))); // NOI18N
-        jLabel31.setText("jLabel31");
-        jPanel3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, 800, 640));
+        jLabel60.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel60.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel60.setText(" Mercado");
+        jPanel3.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 610, -1, -1));
+
+        jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/mercado..png"))); // NOI18N
+        jLabel61.setText("jLabel61");
+        jLabel61.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel61MouseClicked(evt);
+            }
+        });
+        jPanel3.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 610, 100, 90));
+
+        MapaGen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/01hw84f2xeb84mja8b4j.jpg"))); // NOI18N
+        MapaGen.setText("jLabel31");
+        jPanel3.add(MapaGen, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 800, 640));
+
+        MerFalso.setPreferredSize(new java.awt.Dimension(670, 530));
+
+        javax.swing.GroupLayout MerFalsoLayout = new javax.swing.GroupLayout(MerFalso);
+        MerFalso.setLayout(MerFalsoLayout);
+        MerFalsoLayout.setHorizontalGroup(
+            MerFalsoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 670, Short.MAX_VALUE)
+        );
+        MerFalsoLayout.setVerticalGroup(
+            MerFalsoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 530, Short.MAX_VALUE)
+        );
+
+        jPanel3.add(MerFalso, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, -1, -1));
+
+        jLabel76.setText("Salir");
+        jLabel76.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel76MouseClicked(evt);
+            }
+        });
+        jPanel3.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, -1, -1));
+
+        jLabel77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/pngtree-black-silhouette-skull-sign-danger-png-image_5092954.png"))); // NOI18N
+        jLabel77.setText("jLabel4");
+        jLabel77.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel77MouseClicked(evt);
+            }
+        });
+        jPanel3.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, 100, -1));
 
         javax.swing.GroupLayout MapaLayout = new javax.swing.GroupLayout(Mapa.getContentPane());
         Mapa.getContentPane().setLayout(MapaLayout);
         MapaLayout.setHorizontalGroup(
             MapaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1280, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         MapaLayout.setVerticalGroup(
             MapaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 740, Short.MAX_VALUE)
+        );
+
+        jPanel4.setPreferredSize(new java.awt.Dimension(670, 530));
+
+        jPanel5.setBackground(new java.awt.Color(102, 0, 0));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel59.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel59.setText("Que tal estas Aventurero!!");
+        jPanel5.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 150, 60));
+
+        jLabel58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/image (1).png"))); // NOI18N
+        jLabel58.setText("jLabel58");
+        jPanel5.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, 190, 150));
+
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/mercader.png"))); // NOI18N
+        jLabel55.setText("jLabel55");
+        jPanel5.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 290, 300));
+
+        Comprar.setBackground(new java.awt.Color(153, 0, 0));
+        Comprar.setForeground(new java.awt.Color(255, 255, 255));
+        Comprar.setText("Comprar Objetos");
+        Comprar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComprarActionPerformed(evt);
+            }
+        });
+        jPanel5.add(Comprar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
+
+        Vender.setBackground(new java.awt.Color(153, 0, 0));
+        Vender.setForeground(new java.awt.Color(255, 255, 255));
+        Vender.setText("Vender Objetos");
+        Vender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VenderActionPerformed(evt);
+            }
+        });
+        jPanel5.add(Vender, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
+
+        VenderU.setBackground(new java.awt.Color(153, 0, 0));
+        VenderU.setForeground(new java.awt.Color(255, 255, 255));
+        VenderU.setText("Vender Unidades");
+        jPanel5.add(VenderU, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
+
+        jButton4.setBackground(new java.awt.Color(153, 0, 0));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Hacer Alianzas");
+        jPanel5.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 60, -1, -1));
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/pixelcut-export_1.png"))); // NOI18N
+        jLabel31.setText("jLabel31");
+        jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 670, 420));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 530, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout MercadoAmplioLayout = new javax.swing.GroupLayout(MercadoAmplio.getContentPane());
+        MercadoAmplio.getContentPane().setLayout(MercadoAmplioLayout);
+        MercadoAmplioLayout.setHorizontalGroup(
+            MercadoAmplioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        MercadoAmplioLayout.setVerticalGroup(
+            MercadoAmplioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jPanel6.setPreferredSize(new java.awt.Dimension(670, 530));
+
+        jPanel7.setBackground(new java.awt.Color(102, 0, 0));
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel62.setFont(new java.awt.Font("Roboto Black", 0, 10)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel62.setText("Comprar? A darle Aventurero!!");
+        jPanel7.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 150, 60));
+
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/image (1).png"))); // NOI18N
+        jLabel63.setText("jLabel58");
+        jPanel7.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, 190, 150));
+
+        jLabel64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/mercader.png"))); // NOI18N
+        jLabel64.setText("jLabel55");
+        jPanel7.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 290, 300));
+
+        Armaduras.setBackground(new java.awt.Color(153, 0, 0));
+        Armaduras.setForeground(new java.awt.Color(255, 255, 255));
+        Armaduras.setText("Armaduras");
+        Armaduras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ArmadurasActionPerformed(evt);
+            }
+        });
+        jPanel7.add(Armaduras, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
+
+        Pociones.setBackground(new java.awt.Color(153, 0, 0));
+        Pociones.setForeground(new java.awt.Color(255, 255, 255));
+        Pociones.setText("Pociones");
+        Pociones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PocionesActionPerformed(evt);
+            }
+        });
+        jPanel7.add(Pociones, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
+
+        ObMag.setBackground(new java.awt.Color(153, 0, 0));
+        ObMag.setForeground(new java.awt.Color(255, 255, 255));
+        ObMag.setText("Objetos Magicos");
+        ObMag.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ObMagActionPerformed(evt);
+            }
+        });
+        jPanel7.add(ObMag, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
+
+        ObMit.setBackground(new java.awt.Color(153, 0, 0));
+        ObMit.setForeground(new java.awt.Color(255, 255, 255));
+        ObMit.setText("Objetos Miticos");
+        ObMit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ObMitActionPerformed(evt);
+            }
+        });
+        jPanel7.add(ObMit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, -1, -1));
+
+        Armas.setBackground(new java.awt.Color(153, 0, 0));
+        Armas.setForeground(new java.awt.Color(255, 255, 255));
+        Armas.setText("Armas");
+        Armas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ArmasActionPerformed(evt);
+            }
+        });
+        jPanel7.add(Armas, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, -1, -1));
+
+        jPanel8.setBackground(new java.awt.Color(102, 0, 0));
+
+        jLabel66.setText("      /Precios");
+
+        jLabel67.setText("Armaduras = 200");
+
+        jLabel68.setText("Pociones = 150");
+
+        jLabel69.setText("Objetos Mag = 250");
+
+        jLabel70.setText("Objetos Mit = 250");
+
+        jLabel71.setText("Armas = 150");
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel71)
+                    .addComponent(jLabel70)
+                    .addComponent(jLabel69)
+                    .addComponent(jLabel68)
+                    .addComponent(jLabel67))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel67)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel68)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel69)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel70)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel71)
+                .addGap(0, 82, Short.MAX_VALUE))
+        );
+
+        jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 150, 250));
+
+        jLabel65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/pixelcut-export_1.png"))); // NOI18N
+        jLabel65.setText("jLabel31");
+        jPanel7.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 670, 420));
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 530, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout CompObLayout = new javax.swing.GroupLayout(CompOb.getContentPane());
+        CompOb.getContentPane().setLayout(CompObLayout);
+        CompObLayout.setHorizontalGroup(
+            CompObLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        CompObLayout.setVerticalGroup(
+            CompObLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jPanel9.setPreferredSize(new java.awt.Dimension(670, 530));
+
+        jPanel10.setBackground(new java.awt.Color(102, 0, 0));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel72.setFont(new java.awt.Font("Roboto Black", 0, 10)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel72.setText("Vender? A darle Aventurero!!");
+        jPanel10.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, 150, 60));
+
+        jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/image (1).png"))); // NOI18N
+        jLabel73.setText("jLabel58");
+        jPanel10.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 40, 190, 150));
+
+        jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/mercader.png"))); // NOI18N
+        jLabel74.setText("jLabel55");
+        jPanel10.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 160, 290, 300));
+
+        jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/mochila.png"))); // NOI18N
+        jLabel75.setText("jLabel75");
+        jPanel10.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 130, 130));
+
+        jPanel11.setBackground(new java.awt.Color(102, 0, 0));
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 360, Short.MAX_VALUE)
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 340, Short.MAX_VALUE)
+        );
+
+        jPanel10.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 360, 340));
+
+        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/pixelcut-export_1.png"))); // NOI18N
+        jLabel81.setText("jLabel31");
+        jPanel10.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 670, 420));
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 530, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout VendObLayout = new javax.swing.GroupLayout(VendOb.getContentPane());
+        VendOb.getContentPane().setLayout(VendObLayout);
+        VendObLayout.setHorizontalGroup(
+            VendObLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        VendObLayout.setVerticalGroup(
+            VendObLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -502,7 +880,8 @@ public class Pantalla extends javax.swing.JFrame {
         if (existe) {
             JOptionPane.showMessageDialog(null, "Faccion Seleccionada con Exito");
             Mapa.setVisible(true);
-            Mapa.setSize(this.getSize());
+            Mapa.setSize(this.size());
+            MerFalso.setVisible(false);
         
             Decision.setVisible(false);
         } else {
@@ -708,6 +1087,133 @@ public class Pantalla extends javax.swing.JFrame {
         System.exit(0);        
     }//GEN-LAST:event_jLabel57MouseClicked
 
+    private void VenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VenderActionPerformed
+        // TODO add your handling code here:
+        VendOb.setVisible(true);
+        VendOb.setLocation(MercadoAmplio.location());
+        VendOb.setSize(MercadoAmplio.size()); 
+    }//GEN-LAST:event_VenderActionPerformed
+
+    private void jLabel61MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel61MouseClicked
+        // TODO add your handling code here:
+        MercadoAmplio.setVisible(true);
+        MercadoAmplio.setLocation(MerFalso.location());
+        MercadoAmplio.setSize(MerFalso.size());
+    }//GEN-LAST:event_jLabel61MouseClicked
+
+    private void ComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComprarActionPerformed
+        // TODO add your handling code here:
+        CompOb.setVisible(true);
+        CompOb.setLocation(MercadoAmplio.location());
+        CompOb.setSize(MercadoAmplio.size());        
+    }//GEN-LAST:event_ComprarActionPerformed
+
+    private void ArmadurasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ArmadurasActionPerformed
+        // TODO add your handling code here:
+        String mensaje = "Compraste Armadura"
+                       + "Gastaste = 200" 
+                       + "Obtuviste 100 de Defensa";
+        String no = "No tiene suficiente dinero"
+                       + "Precio = 200" 
+                       + "Agrega 100 de Defensa";
+        if(jugador.getDinero() < 200){
+            JOptionPane.showMessageDialog(null, mensaje);
+            jugador.setDinero(jugador.getDinero() - 200);
+            jugador.setDefensa(jugador.getDefensa() + 100);
+        }else{            
+            JOptionPane.showMessageDialog(null, no);
+        }
+    }//GEN-LAST:event_ArmadurasActionPerformed
+
+    private void PocionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PocionesActionPerformed
+        // TODO add your handling code here:
+        String mensaje = "Compraste Pociones"
+                       + "Gastaste = 150" 
+                       + "Obtuviste 25 de Defensa"
+                       + "Obtuviste 25 de Ataque";
+        String no = "No tiene suficiente dinero"
+                       + "Precio = 150" 
+                       + "Agrega 25 de Defensa"
+                       + "Agrega 25 de Ataque";
+        if(jugador.getDinero() < 150){
+            JOptionPane.showMessageDialog(null, mensaje);
+            jugador.setDinero(jugador.getDinero() - 150);
+            jugador.setDefensa(jugador.getDefensa() + 25);
+            jugador.setAtaque(jugador.getAtaque() + 25);
+        }else{            
+            JOptionPane.showMessageDialog(null, no);
+        }
+    }//GEN-LAST:event_PocionesActionPerformed
+
+    private void ObMagActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ObMagActionPerformed
+        // TODO add your handling code here:
+        String mensaje = "Compraste Objetos Magicos"
+                       + "Gastaste = 250" 
+                       + "Obtuviste 50 de Defensa"
+                       + "Obtuviste 50 de Ataque";
+        String no = "No tiene suficiente dinero"
+                       + "Precio = 250" 
+                       + "Agrega 50 de Defensa"
+                       + "Agrega 50 de Ataque";
+        if(jugador.getDinero() < 250){
+            JOptionPane.showMessageDialog(null, mensaje);
+            jugador.setDinero(jugador.getDinero() - 250);
+            jugador.setDefensa(jugador.getDefensa() + 50);
+            jugador.setAtaque(jugador.getAtaque() + 50);
+        }else{            
+            JOptionPane.showMessageDialog(null, no);
+        }
+    }//GEN-LAST:event_ObMagActionPerformed
+
+    private void ObMitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ObMitActionPerformed
+        // TODO add your handling code here:
+        String mensaje = "Compraste Objetos Miticos"
+                       + "Gastaste = 250" 
+                       + "Obtuviste 25 de Defensa"
+                       + "Obtuviste 75 de Ataque";
+        String no = "No tiene suficiente dinero"
+                       + "Precio = 250" 
+                       + "Agrega 25 de Defensa"
+                       + "Agrega 75 de Ataque";
+        if(jugador.getDinero() < 250){
+            JOptionPane.showMessageDialog(null, mensaje);
+            jugador.setDinero(jugador.getDinero() - 250);
+            jugador.setDefensa(jugador.getDefensa() + 25);
+            jugador.setAtaque(jugador.getAtaque() + 75);
+        }else{            
+            JOptionPane.showMessageDialog(null, no);
+        }
+    }//GEN-LAST:event_ObMitActionPerformed
+
+    private void ArmasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ArmasActionPerformed
+        // TODO add your handling code here:
+        String mensaje = "Compraste Armas"
+                       + "Gastaste = 150" 
+                       + "Obtuviste 100 de Ataque";
+        String no = "No tiene suficiente dinero"
+                       + "Precio = 150" 
+                       + "Agrega 100 de Ataque";
+        if(jugador.getDinero() < 200){
+            JOptionPane.showMessageDialog(null, mensaje);
+            jugador.setDinero(jugador.getDinero() - 150);
+            jugador.setAtaque(jugador.getAtaque() + 100);
+        }else{            
+            JOptionPane.showMessageDialog(null, no);
+        }
+    }//GEN-LAST:event_ArmasActionPerformed
+
+    private void jLabel76MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel76MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Saliendo del Juego");
+        System.exit(0);
+    }//GEN-LAST:event_jLabel76MouseClicked
+
+    private void jLabel77MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel77MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Saliendo del Juego");
+        System.exit(0);
+    }//GEN-LAST:event_jLabel77MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -740,14 +1246,36 @@ public class Pantalla extends javax.swing.JFrame {
             public void run() {
                 new Pantalla().setVisible(true);
             }
-        });
+        });        
+        
+        ArrayList<Mercado> articulosMercado = new ArrayList<>();
+        articulosMercado.add(new Mercado("Objetos mágicos", 10, 100, "Tienda de Magia"));
+        articulosMercado.add(new Mercado("Armas", 15, 150, "Armería"));
+        articulosMercado.add(new Mercado("Pociones", 20, 50, "Alquimia"));
+        articulosMercado.add(new Mercado("Armaduras", 10, 100, "Armería"));
+        articulosMercado.add(new Mercado("Piedras Preciosas", 5, 500, "Joyería"));
+                
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Armaduras;
+    private javax.swing.JButton Armas;
     private javax.swing.JButton BtnInicio;
+    private javax.swing.JDialog CompOb;
+    private javax.swing.JButton Comprar;
     private javax.swing.JDialog Decision;
     private javax.swing.JTextField FacSelec;
     private javax.swing.JDialog Mapa;
+    private javax.swing.JLabel MapaGen;
+    private javax.swing.JPanel MerFalso;
+    private javax.swing.JDialog MercadoAmplio;
+    private javax.swing.JButton ObMag;
+    private javax.swing.JButton ObMit;
+    private javax.swing.JButton Pociones;
+    private javax.swing.JDialog VendOb;
+    private javax.swing.JButton Vender;
+    private javax.swing.JButton VenderU;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -798,15 +1326,45 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
     static Random random = new Random();
     static Jugador jugador = new Jugador();
