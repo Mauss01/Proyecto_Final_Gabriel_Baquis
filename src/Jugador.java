@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 /**
  *
  * @author gabri
@@ -15,7 +16,7 @@ public class Jugador {
     private int defensa;
     private int honor;
     private ArrayList<Facciones> enemigos;
-     private ArrayList<Facciones> alianzas;
+    private ArrayList<Facciones> alianzas;
     
     public Jugador() {
         this.razaSeleccionada = null; 
@@ -123,33 +124,42 @@ public class Jugador {
         ArrayList<Unidad> unidadesJugador = getUnidades();
 
         if (unidadesJugador.isEmpty()) {
-            System.out.println("No tienes unidades para vender.");
+            JOptionPane.showMessageDialog(null, "No tienes unidades para vender.");
             return;
         }
 
-        System.out.println("-- Vender unidades --");
+        StringBuilder opciones = new StringBuilder("-- Vender unidades --\n");
         for (int i = 0; i < unidadesJugador.size(); i++) {
             Unidad unidad = unidadesJugador.get(i);
-            System.out.println((i + 1) + ") " + unidad.getNombre() + " - Cantidad: " + unidad.getCantidad());
+            opciones.append((i + 1) + ") " + unidad.getNombre() + " - Cantidad: " + unidad.getCantidad() + "\n");
         }
-        System.out.println("0) Salir.");
+        opciones.append("0) Salir.");
 
-        System.out.print("Seleccione el numero de la unidad que desea vender: ");
-        int seleccion = sc.nextInt();
+        String seleccionStr = JOptionPane.showInputDialog(null, opciones.toString(), "Seleccionar unidad", JOptionPane.INFORMATION_MESSAGE);
 
-        if (seleccion >= 1 && seleccion <= unidadesJugador.size()) {
-            Unidad unidadSeleccionada = unidadesJugador.get(seleccion - 1);
-            unidadesJugador.remove(unidadSeleccionada);
-            int ganancia = unidadSeleccionada.getCosto() / 2; 
-            aumentarDinero(ganancia);
-            System.out.println("Vendiste " + unidadSeleccionada.getNombre() + ". Dinero ganado: " + ganancia + ". Dinero actual: " + getDinero());
-        } else {
-            if (seleccion == 0) {
-                Pantalla.Mercado(jugador, inventario);
+        if (seleccionStr != null && !seleccionStr.trim().isEmpty()) {
+            try {
+                int seleccion = Integer.parseInt(seleccionStr);
+                if (seleccion >= 1 && seleccion <= unidadesJugador.size()) {
+                    Unidad unidadSeleccionada = unidadesJugador.get(seleccion - 1);
+                    unidadesJugador.remove(unidadSeleccionada);
+                    int ganancia = unidadSeleccionada.getCosto() / 2;
+                    jugador.aumentarDinero(ganancia);
+                    JOptionPane.showMessageDialog(null, "Vendiste " + unidadSeleccionada.getNombre() 
+                                                        + ". Dinero ganado: " + ganancia );
+                } else if (seleccion == 0) {
+                    Pantalla.Mercado(jugador, inventario);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Seleccion no valida.");
+                }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, ingrese un número valido.");
             }
-            System.out.println("Seleccion no válida.");
+        } else {
+            JOptionPane.showMessageDialog(null, "Operacion cancelada.");
         }
     }
+
     public void hacerAlianza(Facciones faccion) {
         alianzas.add(faccion);
         enemigos.remove(faccion); 
