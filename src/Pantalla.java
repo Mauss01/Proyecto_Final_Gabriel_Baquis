@@ -8,12 +8,7 @@ import javax.swing.JOptionPane;
  *
  * @author gabri
  */
-public class Pantalla extends javax.swing.JFrame {
-
-    static void Mercado(Jugador jugador, Inventario inventario) {
-        
-    }
-    
+public class Pantalla extends javax.swing.JFrame {        
     /**
      * Creates new form Pantalla
      */
@@ -89,9 +84,11 @@ public class Pantalla extends javax.swing.JFrame {
         jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
         jLabel78 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
         Bosque = new javax.swing.JLabel();
         DineroJug = new javax.swing.JLabel();
         RecurJug = new javax.swing.JLabel();
+        AtaqMet = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
         jLabel80 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
@@ -144,6 +141,7 @@ public class Pantalla extends javax.swing.JFrame {
         jLabel59 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
+        ComprarU = new javax.swing.JButton();
         Comprar = new javax.swing.JButton();
         Vender = new javax.swing.JButton();
         VenderU = new javax.swing.JButton();
@@ -175,8 +173,45 @@ public class Pantalla extends javax.swing.JFrame {
         jLabel73 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
         jLabel75 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel99 = new javax.swing.JLabel();
+        jLabel100 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
+        jLabel96 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
+        jLabel95 = new javax.swing.JLabel();
+        jLabel101 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        jLabel103 = new javax.swing.JLabel();
+        jLabel104 = new javax.swing.JLabel();
+        jLabel105 = new javax.swing.JLabel();
+        jLabel106 = new javax.swing.JLabel();
+        jLabel107 = new javax.swing.JLabel();
+        jLabel108 = new javax.swing.JLabel();
+        jLabel109 = new javax.swing.JLabel();
+        PocText = new javax.swing.JLabel();
+        FlorText = new javax.swing.JLabel();
+        MaderaText = new javax.swing.JLabel();
+        PPText = new javax.swing.JLabel();
+        ObMText = new javax.swing.JLabel();
+        ObMcText = new javax.swing.JLabel();
+        MadText = new javax.swing.JLabel();
+        ArmaText = new javax.swing.JLabel();
+        V1 = new javax.swing.JButton();
+        V2 = new javax.swing.JButton();
+        V3 = new javax.swing.JButton();
+        V4 = new javax.swing.JButton();
+        V5 = new javax.swing.JButton();
+        V6 = new javax.swing.JButton();
+        V7 = new javax.swing.JButton();
+        V8 = new javax.swing.JButton();
         jLabel81 = new javax.swing.JLabel();
+        Perdiste = new javax.swing.JDialog();
         jPanel1 = new javax.swing.JPanel();
         BtnInicio = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
@@ -491,13 +526,23 @@ public class Pantalla extends javax.swing.JFrame {
 
         jLabel78.setFont(new java.awt.Font("Roboto Black", 2, 18)); // NOI18N
         jLabel78.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel78.setText("Bosque");
+        jLabel78.setText("  Atacar");
         jLabel78.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel78MouseClicked(evt);
             }
         });
-        jPanel3.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 60, 110, -1));
+        jPanel3.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 110, -1));
+
+        jLabel92.setFont(new java.awt.Font("Roboto Black", 2, 18)); // NOI18N
+        jLabel92.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel92.setText("Bosque");
+        jLabel92.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel92MouseClicked(evt);
+            }
+        });
+        jPanel3.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 60, 110, -1));
 
         Bosque.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -513,6 +558,15 @@ public class Pantalla extends javax.swing.JFrame {
         RecurJug.setFont(new java.awt.Font("Roboto Medium", 1, 12)); // NOI18N
         RecurJug.setText("...........");
         jPanel3.add(RecurJug, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 30, 50, -1));
+
+        AtaqMet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/pixelcut-export.png"))); // NOI18N
+        AtaqMet.setText("jLabel91");
+        AtaqMet.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AtaqMetMouseClicked(evt);
+            }
+        });
+        jPanel3.add(AtaqMet, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 110, 90));
 
         jPanel12.setBackground(new java.awt.Color(0, 0, 0));
         jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -559,7 +613,7 @@ public class Pantalla extends javax.swing.JFrame {
         NomText.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
         NomText.setForeground(new java.awt.Color(255, 255, 255));
         NomText.setText("--------");
-        jPanel12.add(NomText, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 96, 59, -1));
+        jPanel12.add(NomText, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 96, 100, -1));
 
         jLabel87.setBackground(new java.awt.Color(255, 255, 255));
         jLabel87.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
@@ -775,6 +829,16 @@ public class Pantalla extends javax.swing.JFrame {
         jLabel55.setText("jLabel55");
         jPanel5.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 290, 300));
 
+        ComprarU.setBackground(new java.awt.Color(153, 0, 0));
+        ComprarU.setForeground(new java.awt.Color(255, 255, 255));
+        ComprarU.setText("Comprar Unidades");
+        ComprarU.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComprarUActionPerformed(evt);
+            }
+        });
+        jPanel5.add(ComprarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, -1, -1));
+
         Comprar.setBackground(new java.awt.Color(153, 0, 0));
         Comprar.setForeground(new java.awt.Color(255, 255, 255));
         Comprar.setText("Comprar Objetos");
@@ -913,16 +977,34 @@ public class Pantalla extends javax.swing.JFrame {
 
         jPanel8.setBackground(new java.awt.Color(102, 0, 0));
 
+        jLabel66.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel66.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(255, 255, 255));
         jLabel66.setText("      /Precios");
 
+        jLabel67.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel67.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
         jLabel67.setText("Armaduras = 200");
 
+        jLabel68.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel68.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(255, 255, 255));
         jLabel68.setText("Pociones = 150");
 
+        jLabel69.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel69.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(255, 255, 255));
         jLabel69.setText("Objetos Mag = 250");
 
+        jLabel70.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel70.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
         jLabel70.setText("Objetos Mit = 250");
 
+        jLabel71.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel71.setFont(new java.awt.Font("Roboto Black", 1, 12)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(255, 255, 255));
         jLabel71.setText("Armas = 150");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -956,10 +1038,10 @@ public class Pantalla extends javax.swing.JFrame {
                 .addComponent(jLabel70)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel71)
-                .addGap(0, 82, Short.MAX_VALUE))
+                .addGap(0, 37, Short.MAX_VALUE))
         );
 
-        jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 150, 250));
+        jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 150, 200));
 
         jLabel65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/pixelcut-export_1.png"))); // NOI18N
         jLabel65.setText("jLabel31");
@@ -1011,20 +1093,221 @@ public class Pantalla extends javax.swing.JFrame {
         jLabel75.setText("jLabel75");
         jPanel10.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 130, 130));
 
+        jLabel98.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/mit.png"))); // NOI18N
+        jLabel98.setText("jLabel98");
+        jPanel10.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 40, -1));
+
+        jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/image (7).png"))); // NOI18N
+        jLabel97.setText("jLabel97");
+        jPanel10.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 40, -1));
+
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/Armadura_de_Caballero_Negro_29.png"))); // NOI18N
+        jLabel99.setText("jLabel99");
+        jPanel10.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 40, -1));
+
+        jLabel100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/arma.png"))); // NOI18N
+        jLabel100.setText("jLabel100");
+        jPanel10.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, 40, -1));
+
         jPanel11.setBackground(new java.awt.Color(102, 0, 0));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 360, Short.MAX_VALUE)
+        jLabel96.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jLabel96.setText("Recurso");
+        jPanel11.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 84, 28));
+
+        jPanel13.setBackground(new java.awt.Color(153, 0, 51));
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 80, Short.MAX_VALUE)
         );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
         );
 
-        jPanel10.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 360, 340));
+        jPanel11.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, 30));
+
+        jPanel14.setBackground(new java.awt.Color(153, 0, 51));
+
+        jLabel91.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        jLabel91.setText("Cantidad");
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel91, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                .addContainerGap(9, Short.MAX_VALUE)
+                .addComponent(jLabel91)
+                .addContainerGap())
+        );
+
+        jPanel11.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, 30));
+
+        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/flor.png"))); // NOI18N
+        jLabel94.setText("jLabel94");
+        jPanel11.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 40, -1));
+
+        jLabel93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/madera.png"))); // NOI18N
+        jLabel93.setText("jLabel93");
+        jPanel11.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 40, -1));
+
+        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/e904ce9399cafecb4f357ec8bd402ddc-icono-de-piedra-preciosa-diamante-negro.png"))); // NOI18N
+        jLabel95.setText("jLabel95");
+        jPanel11.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 40, -1));
+
+        jLabel101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/pociones.png"))); // NOI18N
+        jLabel101.setText("jLabel101");
+        jPanel11.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 40, -1));
+
+        jLabel102.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabel102.setText(">>");
+        jPanel11.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, -1, -1));
+
+        jLabel103.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabel103.setText(">>");
+        jPanel11.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, -1, -1));
+
+        jLabel104.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabel104.setText(">>");
+        jPanel11.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, -1, -1));
+
+        jLabel105.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabel105.setText(">>");
+        jPanel11.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, -1, -1));
+
+        jLabel106.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabel106.setText(">>");
+        jPanel11.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, -1, -1));
+
+        jLabel107.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabel107.setText(">>");
+        jPanel11.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, -1, -1));
+
+        jLabel108.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabel108.setText(">>");
+        jPanel11.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, -1, -1));
+
+        jLabel109.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jLabel109.setText(">>");
+        jPanel11.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, -1, -1));
+
+        PocText.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        PocText.setText("jLabel110");
+        jPanel11.add(PocText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, -1, -1));
+
+        FlorText.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        FlorText.setText("jLabel110");
+        jPanel11.add(FlorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
+
+        MaderaText.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        MaderaText.setText("jLabel110");
+        jPanel11.add(MaderaText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, -1, -1));
+
+        PPText.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        PPText.setText("jLabel110");
+        jPanel11.add(PPText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
+
+        ObMText.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        ObMText.setText("jLabel110");
+        jPanel11.add(ObMText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, -1));
+
+        ObMcText.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        ObMcText.setText("jLabel110");
+        jPanel11.add(ObMcText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, -1));
+
+        MadText.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        MadText.setText("jLabel110");
+        jPanel11.add(MadText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
+
+        ArmaText.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        ArmaText.setText("jLabel110");
+        jPanel11.add(ArmaText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, -1, -1));
+
+        V1.setBackground(new java.awt.Color(153, 0, 51));
+        V1.setText("Vender");
+        V1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                V1ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(V1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, 70, -1));
+
+        V2.setBackground(new java.awt.Color(153, 0, 51));
+        V2.setText("Vender");
+        V2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                V2ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(V2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, -1, -1));
+
+        V3.setBackground(new java.awt.Color(153, 0, 51));
+        V3.setText("Vender");
+        V3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                V3ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(V3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, -1, -1));
+
+        V4.setBackground(new java.awt.Color(153, 0, 51));
+        V4.setText("Vender");
+        V4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                V4ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(V4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, 70, -1));
+
+        V5.setBackground(new java.awt.Color(153, 0, 51));
+        V5.setText("Vender");
+        V5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                V5ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(V5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 70, -1));
+
+        V6.setBackground(new java.awt.Color(153, 0, 51));
+        V6.setText("Vender");
+        V6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                V6ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(V6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 70, -1));
+
+        V7.setBackground(new java.awt.Color(153, 0, 51));
+        V7.setText("Vender");
+        V7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                V7ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(V7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 70, -1));
+
+        V8.setBackground(new java.awt.Color(153, 0, 51));
+        V8.setText("Vender");
+        V8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                V8ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(V8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 70, -1));
+
+        jPanel10.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 360, 390));
 
         jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_final/pixelcut-export_1.png"))); // NOI18N
         jLabel81.setText("jLabel31");
@@ -1052,6 +1335,17 @@ public class Pantalla extends javax.swing.JFrame {
         VendObLayout.setVerticalGroup(
             VendObLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        javax.swing.GroupLayout PerdisteLayout = new javax.swing.GroupLayout(Perdiste.getContentPane());
+        Perdiste.getContentPane().setLayout(PerdisteLayout);
+        PerdisteLayout.setHorizontalGroup(
+            PerdisteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        PerdisteLayout.setVerticalGroup(
+            PerdisteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1188,296 +1482,300 @@ public class Pantalla extends javax.swing.JFrame {
         
             Decision.setVisible(false);
         } else {
-            JOptionPane.showMessageDialog(null, "La Faccion Seleccionada no existe");
+            JOptionPane.showMessageDialog(null, "La Faccion Seleccionada no existe");                        
         }
         
-        Random random = new Random();
-        recursos = random.nextInt(1001) + 3000; 
-        dinero = random.nextInt(601) + 900; 
-        ataque = random.nextInt(301) + 400; 
-        defensa = random.nextInt(601) + 400;
-        poder = random.nextInt(51)+250;
+        if (existe) {
+            Random random = new Random();
+            recursos = random.nextInt(1001) + 3000; 
+            dinero = random.nextInt(601) + 900; 
+            ataque = random.nextInt(301) + 400; 
+            defensa = random.nextInt(601) + 400;
             
-        Facciones faccion = new Facciones(faccionSeleccionada, recursos, dinero, ataque, defensa);            
-        jugador.setRazaSeleccionada(faccion);
+            Facciones faccion = new Facciones(faccionSeleccionada, recursos, dinero, ataque, defensa);            
+            jugador.setRazaSeleccionada(faccion);
             
-        System.out.println(jugador.getAtaque());
-        System.out.println(jugador.getDefensa());
-        System.out.println(jugador.getDinero());
-        System.out.println(jugador.getRecursos());
+            System.out.println(jugador.getAtaque());
+            System.out.println(jugador.getDefensa());
+            System.out.println(jugador.getDinero());
+            System.out.println(jugador.getRecursos());                              
             
-        ArrayList<Unidad> unidades = new ArrayList<>();                    
-            
-        switch (faccionSeleccionada) {
-            case "The Empire":
-                unidades.add(new Unidad("Hijos de Sigmar",100,40,"Infanteria",poder));
-                unidades.add(new Unidad("Espaderos",90,40,"Infanteria",poder));
-                unidades.add(new Unidad("Herreuelos",40,60,"Caballeria",poder));
-                unidades.add(new Unidad("Gran Cañon",10,80,"Artilleria",poder));
-                unidades.add(new Unidad("Hechiero de la Luz",1,1000,"Mago",poder));
-                break;
-            case "Norsca":
-                unidades.add(new Unidad("Barbaros",100,40,"Infanteria",poder));
-                unidades.add(new Unidad("Berserkers",90,75,"Infanteria",poder));
-                unidades.add(new Unidad("Jinetes Barbaros",40,53,"Caballeria",poder));
-                unidades.add(new Unidad("Carro de Barbaros con Lobos de Hielo",10,78,"Artilleria",poder));
-                unidades.add(new Unidad("Hechicero del Caos",1,1100,"Mago",poder));
-                break;
-            case "Bretonnia":
-                unidades.add(new Unidad("Turba de Campesinos",100,20,"Infanteria",poder));
-                unidades.add(new Unidad("Hombres de armas",90,25,"Infanteria",poder));
-                unidades.add(new Unidad("Guardiaes del Grial",40,160,"Caballeria",poder));
-                unidades.add(new Unidad("Trebuchet Bendecido",10,90,"Artilleria",poder));
-                unidades.add(new Unidad("Profetisa",1,1000,"Mago",poder));
-                break;
-            case "Grand Cathay":
-                unidades.add(new Unidad("Jade Warriors",100,62,"Infanteria",poder));
-                unidades.add(new Unidad("Celestial Dragon Guard",90,80,"Infanteria",poder));
-                unidades.add(new Unidad("Peasant Horsemen",40,100,"Caballeria",poder));
-                unidades.add(new Unidad("Grand Cannon",10,105,"Artilleria",poder));
-                unidades.add(new Unidad("Alchemist",1,1000,"Mago",poder));
-                break;
-            case "Kislev":
-                unidades.add(new Unidad("Tzar Guard",100,57,"Infanteria",poder));
-                unidades.add(new Unidad("Kislevite Warriors",90,60,"Infanteria",poder));
-                unidades.add(new Unidad("Kossovite",40,110,"Caballeria",poder));
-                unidades.add(new Unidad("Little Grom",10,95,"Artilleria",poder));
-                unidades.add(new Unidad("Frost Maiden",1,1000,"Mago",poder));
-                break; 
-            case "Dwarfs":
-                unidades.add(new Unidad("Guerreros Enanos",100,45,"Infanteria",poder));
-                unidades.add(new Unidad("Mineros",90,32,"Infanteria",poder));
-                unidades.add(new Unidad("Girobombardero",40,116,"Caballeria",poder));
-                unidades.add(new Unidad("Lanzaagravios",10,140,"Artilleria",poder));
-                unidades.add(new Unidad("Herrero Runico",1,1000,"Mago",poder));
-                break;                         
-            case "High Elves":
-                unidades.add(new Unidad("Dryads",100,67,"Infanteria",poder));
-                unidades.add(new Unidad("Phoenix Guard",90,70,"Infanteria",poder));
-                unidades.add(new Unidad("Ellyrian Reavers",40,120,"Caballeria",poder));
-                unidades.add(new Unidad("Eagle Claw Bolt Throwers",10,115,"Artilleria",poder));
-                unidades.add(new Unidad("Hand of the Shadow Crown",1,1000,"Mago",poder));
-                break; 
-            case "Wood Elves":
-                unidades.add(new Unidad("Guardias Eternos",100,47,"Infanteria",poder));
-                unidades.add(new Unidad("Guardias Corazon del Invierno",90,80,"Infanteria",poder));
-                unidades.add(new Unidad("Jinetes Salvajes",40,110,"Caballeria",poder));
-                unidades.add(new Unidad("Jinetes de Halcon",10,95,"Artilleria",poder));
-                unidades.add(new Unidad("Cantor de Arboles",1,1000,"Mago",poder));
-                break; 
-            case "Lizardmen":
-                unidades.add(new Unidad("Red Crested Skinks",100,73,"Infanteria",poder));
-                unidades.add(new Unidad("Saurus Warriors",90,71,"Infanteria",poder));
-                unidades.add(new Unidad("Horned Ones",40,131,"Caballeria",poder));
-                unidades.add(new Unidad("Terradon Riders",10,108,"Artilleria",poder));
-                unidades.add(new Unidad("Lord Mazdamundi",1,1000,"Mago",poder));
-                break; 
-            case "Khorne":
-                unidades.add(new Unidad("Forsaken of Khorne",100,68,"Infanteria",poder));
-                unidades.add(new Unidad("Chosen of Khorne",90,110,"Infanteria",poder));
-                unidades.add(new Unidad("Chaos Knights of Khorne",40,121,"Caballeria",poder));
-                unidades.add(new Unidad("Blood Shrine of Khorne",10,135,"Artilleria",poder));
-                unidades.add(new Unidad("Bloodreaper",1,1000,"Mago",poder));
-                break; 
-            case "Nurgle":
-                unidades.add(new Unidad("Nurglings",100,50,"Infanteria",poder));
-                unidades.add(new Unidad("Pestigors",90,65,"Infanteria",poder));
-                unidades.add(new Unidad("Rot Knights",40,104,"Caballeria",poder));
-                unidades.add(new Unidad("Plague Drones of Nurgle",10,95,"Artilleria",poder));
-                unidades.add(new Unidad("Grukmur Three-Horn",1,1000,"Mago",poder));
-                break; 
-            case "Tzeentch":
-                unidades.add(new Unidad("Blue Horrors of Tzeentch",100,47,"Infanteria",poder));
-                unidades.add(new Unidad("Forsaken of Tzeentch",90,80,"Infanteria",poder));
-                unidades.add(new Unidad("Centigors of Tzeentch",40,110,"Caballeria",poder));
-                unidades.add(new Unidad("Exalted Pink Horrors of Tzeentch",10,95,"Artilleria",poder));
-                unidades.add(new Unidad("The Changeling",1,1000,"Mago",poder));
-                break; 
-            case "Slaanesh":
-                unidades.add(new Unidad("Devoted Marauders of Slaanesh",100,65,"Infanteria",poder));
-                unidades.add(new Unidad("Daemonettes of Slaanesh",90,70,"Infanteria",poder));
-                unidades.add(new Unidad("HeartSeekers of Slaanesh",40,110,"Caballeria",poder));
-                unidades.add(new Unidad("Seeker Chariots",10,101,"Artilleria",poder));
-                unidades.add(new Unidad("Cultist of Slaanesh",1,1000,"Mago",poder));
-                break; 
-            case "Warriors of Chaos":
-                unidades.add(new Unidad("Guardia de los Espejos",100,100,"Infanteria",poder));
-                unidades.add(new Unidad("Elegidos",90,140,"Infanteria",poder));
-                unidades.add(new Unidad("Espadas del Caos",40,180,"Caballeria",poder));
-                unidades.add(new Unidad("Alma de la Perdicion",10,140,"Artilleria",poder));
-                unidades.add(new Unidad("Hechicero del Caos",1,1000,"Mago",poder));
-                break; 
-            case "Beastmen":
-                unidades.add(new Unidad("Rebaño de Gors",100,60,"Infanteria",poder));
-                unidades.add(new Unidad("Rebaño de Bestigors",90,100,"Infanteria",poder));
-                unidades.add(new Unidad("Centigors",40,85,"Caballeria",poder));
-                unidades.add(new Unidad("Cigor",10,160,"Artilleria",poder));
-                unidades.add(new Unidad("Chaman del Rebaño",1,1000,"Mago",poder));
-                break; 
-            case "Skaven":
-                unidades.add(new Unidad("Gutter Runners Slingers",100,55,"Infanteria",poder));
-                unidades.add(new Unidad("Death Globe Bombardiers",90,74,"Infanteria",poder));
-                unidades.add(new Unidad("Wolf Rats",40,100,"Caballeria",poder));
-                unidades.add(new Unidad("Plagueclaw Catepults",10,85,"Artilleria",poder));
-                unidades.add(new Unidad("Packmaster",1,1000,"Mago",poder));
-                break; 
-            case "Chaos Dwarfs":
-                unidades.add(new Unidad("Goblin Labourers",100,61,"Infanteria",poder));
-                unidades.add(new Unidad("Infernal Ironsworn",90,78,"Infanteria",poder));
-                unidades.add(new Unidad("Bull Centaur Renders",40,98,"Caballeria",poder));
-                unidades.add(new Unidad("Dreadquake Mortar",10,92,"Artilleria",poder));
-                unidades.add(new Unidad("Gorduz Bakstabber",1,1000,"Mago",poder));
-                break; 
-            case "Greenskins":
-                unidades.add(new Unidad("Guerrero Orkoz",100,45,"Infanteria",poder));
-                unidades.add(new Unidad("Grandotez Orkoz",90,70,"Infanteria",poder));
-                unidades.add(new Unidad("Garrapatos Saltarines de los Goblins Nocturnos",40,65,"Caballeria",poder));
-                unidades.add(new Unidad("Katapulta de Goblins Voladorez",10,90,"Artilleria",poder));
-                unidades.add(new Unidad("Chaman Goblin Nocturno",1,1000,"Mago",poder));
-                break; 
-            case "Dark Elves":
-                unidades.add(new Unidad("Black Ark Corsairs",100,55,"Infanteria",poder));
-                unidades.add(new Unidad("Har Ganeth Executioners",90,84,"Infanteria",poder));
-                unidades.add(new Unidad("Cold One Knights",40,120,"Caballeria",poder));
-                unidades.add(new Unidad("Reaper Bolt Throwers",10,85,"Artilleria",poder));
-                unidades.add(new Unidad("Socreress",1,1000,"Mago",poder));
-                break; 
-            case "Ogre Kingdom":
-                unidades.add(new Unidad("Gnoblar",100,58,"Infanteria",poder));
-                unidades.add(new Unidad("Gnoblars Trappers",90,89,"Infanteria",poder));
-                unidades.add(new Unidad("Mournfang Cavalry",40,102,"Caballeria",poder));
-                unidades.add(new Unidad("Gnoblar Scraplauncher",10,73,"Artilleria",poder));
-                unidades.add(new Unidad("Firebelly",1,1000,"Mago",poder));
-                break;
-            case "Vampire Coast":
-                unidades.add(new Unidad("Zombie Pirate Deckhands Mob",100,57,"Infanteria",poder));
-                unidades.add(new Unidad("Depth Guard",90,92,"Infanteria",poder));
-                unidades.add(new Unidad("Dammed Knights of the Realm",40,113,"Caballeria",poder));
-                unidades.add(new Unidad("Queen Bess",10,101,"Artilleria",poder));
-                unidades.add(new Unidad("Cylostra Direfin",1,1000,"Mago",poder));
-                break; 
-            case "Vampire Counts":
-                unidades.add(new Unidad("Guerreros Esqueletos",100,30,"Infanteria",poder));
-                unidades.add(new Unidad("Guardia de los Tumulos",90,75,"Infanteria",poder));
-                unidades.add(new Unidad("Caballeros Sangrientos",40,170,"Caballeria",poder));
-                unidades.add(new Unidad("Sagrario Mortis",10,90,"Artilleria",poder));
-                unidades.add(new Unidad("Nigromante",1,1000,"Mago",poder));
-                break; 
-            case "Tomb Kings":
-                unidades.add(new Unidad("Skeleton Warrios",100,58,"Infanteria",poder));
-                unidades.add(new Unidad("Tomb Guard",90,76,"Infanteria",poder));
-                unidades.add(new Unidad("Nehehara Horseman",40,103,"Caballeria",poder));
-                unidades.add(new Unidad("Screaming Skulls Catapults",10,105,"Artilleria",poder));
-                unidades.add(new Unidad("Liche Priest",1,1000,"Mago",poder));
-                break;
-            default:System.out.println("Faccion desconocida");
-                break;                        
-        }                    
-        jugador.setUnidades(unidades);
+            switch (faccionSeleccionada) {
+                case "The Empire":
+                    unidades.add(new Unidad("Hijos de Sigmar",100,40,"Infanteria",random.nextInt(10)+50));                    
+                    unidades.add(new Unidad("Espaderos",90,40,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Herreuelos",40,60,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Gran Cañon",10,80,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Hechiero de la Luz",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Norsca":
+                    unidades.add(new Unidad("Barbaros",100,40,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Berserkers",90,75,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Jinetes Barbaros",40,53,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Carro de Barbaros con Lobos de Hielo",10,78,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Hechicero del Caos",1,1100,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Bretonnia":
+                    unidades.add(new Unidad("Turba de Campesinos",100,20,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Hombres de armas",90,25,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Guardiaes del Grial",40,160,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Trebuchet Bendecido",10,90,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Profetisa",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Grand Cathay":
+                    unidades.add(new Unidad("Jade Warriors",100,62,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Celestial Dragon Guard",90,80,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Peasant Horsemen",40,100,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Grand Cannon",10,105,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Alchemist",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Kislev":
+                    unidades.add(new Unidad("Tzar Guard",100,57,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Kislevite Warriors",90,60,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Kossovite",40,110,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Little Grom",10,95,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Frost Maiden",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Dwarfs":
+                    unidades.add(new Unidad("Guerreros Enanos",100,45,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Mineros",90,32,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Girobombardero",40,116,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Lanzaagravios",10,140,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Herrero Runico",1,1000,"Mago",random.nextInt(10)+250));
+                    break;                         
+                case "High Elves":
+                    unidades.add(new Unidad("Dryads",100,67,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Phoenix Guard",90,70,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Ellyrian Reavers",40,120,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Eagle Claw Bolt Throwers",10,115,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Hand of the Shadow Crown",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Wood Elves":
+                    unidades.add(new Unidad("Guardias Eternos",100,47,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Guardias Corazon del Invierno",90,80,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Jinetes Salvajes",40,110,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Jinetes de Halcon",10,95,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Cantor de Arboles",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Lizardmen":
+                    unidades.add(new Unidad("Red Crested Skinks",100,73,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Saurus Warriors",90,71,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Horned Ones",40,131,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Terradon Riders",10,108,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Lord Mazdamundi",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Khorne":
+                    unidades.add(new Unidad("Forsaken of Khorne",100,68,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Chosen of Khorne",90,110,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Chaos Knights of Khorne",40,121,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Blood Shrine of Khorne",10,135,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Bloodreaper",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Nurgle":
+                    unidades.add(new Unidad("Nurglings",100,50,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Pestigors",90,65,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Rot Knights",40,104,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Plague Drones of Nurgle",10,95,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Grukmur Three-Horn",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Tzeentch":
+                    unidades.add(new Unidad("Blue Horrors of Tzeentch",100,47,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Forsaken of Tzeentch",90,80,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Centigors of Tzeentch",40,110,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Exalted Pink Horrors of Tzeentch",10,95,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("The Changeling",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Slaanesh":
+                    unidades.add(new Unidad("Devoted Marauders of Slaanesh",100,65,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Daemonettes of Slaanesh",90,70,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("HeartSeekers of Slaanesh",40,110,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Seeker Chariots",10,101,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Cultist of Slaanesh",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Warriors of Chaos":
+                    unidades.add(new Unidad("Guardia de los Espejos",100,100,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Elegidos",90,140,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Espadas del Caos",40,180,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Alma de la Perdicion",10,140,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Hechicero del Caos",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Beastmen":
+                    unidades.add(new Unidad("Rebaño de Gors",100,60,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Rebaño de Bestigors",90,100,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Centigors",40,85,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Cigor",10,160,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Chaman del Rebaño",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Skaven":
+                    unidades.add(new Unidad("Gutter Runners Slingers",100,55,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Death Globe Bombardiers",90,74,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Wolf Rats",40,100,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Plagueclaw Catepults",10,85,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Packmaster",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Chaos Dwarfs":
+                    unidades.add(new Unidad("Goblin Labourers",100,61,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Infernal Ironsworn",90,78,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Bull Centaur Renders",40,98,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Dreadquake Mortar",10,92,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Gorduz Bakstabber",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Greenskins":
+                    unidades.add(new Unidad("Guerrero Orkoz",100,45,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Grandotez Orkoz",90,70,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Garrapatos Saltarines de los Goblins Nocturnos",40,65,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Katapulta de Goblins Voladorez",10,90,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Chaman Goblin Nocturno",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Dark Elves":
+                    unidades.add(new Unidad("Black Ark Corsairs",100,55,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Har Ganeth Executioners",90,84,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Cold One Knights",40,120,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Reaper Bolt Throwers",10,85,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Socreress",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Ogre Kingdom":
+                    unidades.add(new Unidad("Gnoblar",100,58,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Gnoblars Trappers",90,89,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Mournfang Cavalry",40,102,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Gnoblar Scraplauncher",10,73,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Firebelly",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Vampire Coast":
+                    unidades.add(new Unidad("Zombie Pirate Deckhands Mob",100,57,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Depth Guard",90,92,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Dammed Knights of the Realm",40,113,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Queen Bess",10,101,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Cylostra Direfin",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Vampire Counts":
+                    unidades.add(new Unidad("Guerreros Esqueletos",100,30,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Guardia de los Tumulos",90,75,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Caballeros Sangrientos",40,170,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Sagrario Mortis",10,90,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Nigromante",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Tomb Kings":
+                    unidades.add(new Unidad("Skeleton Warrios",100,58,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Tomb Guard",90,76,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Nehehara Horseman",40,103,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Screaming Skulls Catapults",10,105,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Liche Priest",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                default:System.out.println("Faccion desconocida");
+                    break;                        
+            }                    
+            jugador.setUnidades(unidades);
                     
-        for (String faccionNombre : todasFacciones) {
-            if (!faccionNombre.equals(faccionSeleccionada)) {
-                Facciones enemigos = new Facciones(faccionNombre, recursos, dinero, ataque, defensa);
-                facciones.add(enemigos);
+            for (String faccionNombre : todasFacciones) {
+                if (!faccionNombre.equals(faccionSeleccionada)) {
+                    Facciones enemigo = new Facciones(faccionNombre, random.nextInt(1001) + 3000, random.nextInt(601) + 900, random.nextInt(301) + 400, random.nextInt(601) + 400);
+                    enemigo.setUnidades(agregarU(faccionNombre));
+                    facciones.add(enemigo);                                        
+                }                
             }
-        }
                     
-        switch (faccionSeleccionada) {
-            case "The Empire":
-                EmpireLogo.setVisible(true);                               
-                break;
-            case "Norsca":                
-                NorscaLogo.setVisible(true);
-                break;
-            case "Bretonnia":
-                BretonniaLogo.setVisible(true);
-                break;
-            case "Grand Cathay":
-                GrandCathayLogo.setVisible(true);
-                break;
-            case "Kislev":
-                KislevLogo.setVisible(true);
-                break; 
-            case "Dwarfs":
-                DwarfsLogo.setVisible(true);
-                break;                         
-            case "High Elves":
-                HighElvesLogo.setVisible(true);
-                break; 
-            case "Wood Elves":
-                WoodElvesLogo.setVisible(true);
-                break; 
-            case "Lizardmen":
-                LizardmenLogo.setVisible(true);
-                break; 
-            case "Khorne":
-                KhorneLogo.setVisible(true);
-                break; 
-            case "Nurgle":
-                NurgleLogo.setVisible(true);
-                break; 
-            case "Tzeentch":
-                TzeentchLogo.setVisible(true);
-                break; 
-            case "Slaanesh":
-                SlaaneshLogo.setVisible(true);
-                break; 
-            case "Warriors of Chaos":
-                WarriorsChaosLogo.setVisible(true);
-                break; 
-            case "Beastmen":
-                BeastmenLogo.setVisible(true);
-                break; 
-            case "Skaven":
-                SkavenLogo.setVisible(true);
-                break; 
-            case "Chaos Dwarfs":
-                ChaosDwarfsLogo.setVisible(true);
-                break; 
-            case "Greenskins":
-                GreenskinsLogo.setVisible(true);
-                break; 
-            case "Dark Elves":
-                DarkElvesLogo.setVisible(true);
-                break; 
-            case "Ogre Kingdom":
-                OgreKingdomLogo.setVisible(true);
-                break;
-            case "Vampire Coast":
-                VampireCoastLogo.setVisible(true);
-                break; 
-            case "Vampire Counts":
-                VampireCountsLogo.setVisible(true);
-                break; 
-            case "Tomb Kings":
-                TombKingsLogo.setVisible(true);
-                break;            
-        }
+            switch (faccionSeleccionada) {
+                case "The Empire":
+                    EmpireLogo.setVisible(true);                               
+                    break;
+                case "Norsca":                
+                    NorscaLogo.setVisible(true);
+                    break;
+                case "Bretonnia":
+                    BretonniaLogo.setVisible(true);
+                    break;
+                case "Grand Cathay":
+                    GrandCathayLogo.setVisible(true);
+                    break;
+                case "Kislev":
+                    KislevLogo.setVisible(true);
+                    break; 
+                case "Dwarfs":
+                    DwarfsLogo.setVisible(true);
+                    break;                         
+                case "High Elves":
+                    HighElvesLogo.setVisible(true);
+                    break; 
+                case "Wood Elves":
+                    WoodElvesLogo.setVisible(true);
+                    break; 
+                case "Lizardmen":
+                    LizardmenLogo.setVisible(true);
+                    break; 
+                case "Khorne":
+                    KhorneLogo.setVisible(true);
+                    break; 
+                case "Nurgle":
+                    NurgleLogo.setVisible(true);
+                    break; 
+                case "Tzeentch":
+                    TzeentchLogo.setVisible(true);
+                    break; 
+                case "Slaanesh":
+                    SlaaneshLogo.setVisible(true);
+                    break; 
+                case "Warriors of Chaos":
+                    WarriorsChaosLogo.setVisible(true);
+                    break; 
+                case "Beastmen":
+                    BeastmenLogo.setVisible(true);
+                    break; 
+                case "Skaven":
+                    SkavenLogo.setVisible(true);
+                    break; 
+                case "Chaos Dwarfs":
+                    ChaosDwarfsLogo.setVisible(true);
+                    break; 
+                case "Greenskins":
+                    GreenskinsLogo.setVisible(true);
+                    break; 
+                case "Dark Elves":
+                    DarkElvesLogo.setVisible(true);
+                    break; 
+                case "Ogre Kingdom":
+                    OgreKingdomLogo.setVisible(true);
+                    break;
+                case "Vampire Coast":
+                    VampireCoastLogo.setVisible(true);
+                    break; 
+                case "Vampire Counts":
+                    VampireCountsLogo.setVisible(true);
+                    break; 
+                case "Tomb Kings":
+                    TombKingsLogo.setVisible(true);
+                    break;            
+            }
                 
-        DineroJug.setText(String.valueOf(jugador.getDinero()));
-        
-        RecurJug.setText(String.valueOf(jugador.getRecursos()));
-        
-        int fv = contarFaccionesVivas();        
-        
-        FacVivas.setText(String.valueOf(fv));        
-        
-        HonJug.setText(String.valueOf(jugador.getHonor()));        
-        
-        AtaqText.setText(String.valueOf(jugador.getAtaque()));        
-        
-        DefText.setText(String.valueOf(jugador.getDefensa()));
-        
-        NomText.setText(faccion.getNombre());        
-        
-        UnidadesJugador(jugador,UnidadesText);        
-        
-        int po = calcularPoderTotal(unidades);
-        
-        PoderJug.setText(String.valueOf(po));
-        
+            DineroJug.setText(String.valueOf(jugador.getDinero()));        
+            RecurJug.setText(String.valueOf(jugador.getRecursos()));        
+            int fv = contarFaccionesVivas();                
+            FacVivas.setText(String.valueOf(fv));                
+            HonJug.setText(String.valueOf(jugador.getHonor()));                
+            AtaqText.setText(String.valueOf(jugador.getAtaque()));                
+            DefText.setText(String.valueOf(jugador.getDefensa()));        
+            NomText.setText(faccion.getNombre());                
+            UnidadesJugador(jugador,UnidadesText);                
+            int po = calcularPoderTotal(unidades);        
+            PoderJug.setText(String.valueOf(po));            
+            
+            for (int i = 0; i < unidades.size(); i++) { 
+                Unidad unidad = unidades.get(i);
+                System.out.println((i + 1) + ") " + unidad.getNombre() + " - Costo: " + unidad.getCosto() + "\n" + " -Poder: " +unidad.getPoder());                
+            }
+            
+            FlorText.setText(String.valueOf(inventario.getFlores()));
+            MaderaText.setText(String.valueOf(inventario.getMadera()));
+            PPText.setText(String.valueOf(inventario.getPiedras_preciosas()));
+            ObMText.setText(String.valueOf(inventario.getObjetos_magicos()));
+            ObMcText.setText(String.valueOf(inventario.getObjetos_miticos()));
+            PocText.setText(String.valueOf(inventario.getPociones()));
+            MadText.setText(String.valueOf(inventario.getArmaduras()));
+            ArmaText.setText(String.valueOf(inventario.getArmas()));
+                                                
+        }                
     }//GEN-LAST:event_FacSelecActionPerformed
-
+            
     private void jLabel56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel56MouseClicked
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(null, "Saliendo del Juego");
@@ -1507,15 +1805,29 @@ public class Pantalla extends javax.swing.JFrame {
     private void ArmadurasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ArmadurasActionPerformed
         // TODO add your handling code here:
         String mensaje = "Compraste Armadura"
-                       + "Gastaste = 200" 
-                       + "Obtuviste 100 de Defensa";
+                        + "Gastaste = 200" 
+                        + "Obtuviste 100 de Defensa";
         String no = "No tiene suficiente dinero"
                        + "Precio = 200" 
                        + "Agrega 100 de Defensa";
-        if(jugador.getDinero() < 200){
+        if(jugador.getDinero() > 200){
             JOptionPane.showMessageDialog(null, mensaje);
-            jugador.setDinero(jugador.getDinero() - 200);
-            jugador.setDefensa(jugador.getDefensa() + 100);
+            
+            int porcentaje = jugador.getHonor()/5;
+            
+            if (porcentaje >= 60) {
+                jugador.setDinero(jugador.getDinero() - 140);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setDefensa(jugador.getDefensa() + 100);
+                DefText.setText(String.valueOf(jugador.getDefensa()));
+            } else {
+                jugador.setDinero(jugador.getDinero() - 200);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setDefensa(jugador.getDefensa() + 100);
+                DefText.setText(String.valueOf(jugador.getDefensa()));
+            }                        
         }else{            
             JOptionPane.showMessageDialog(null, no);
         }
@@ -1531,11 +1843,31 @@ public class Pantalla extends javax.swing.JFrame {
                        + "Precio = 150" 
                        + "Agrega 25 de Defensa"
                        + "Agrega 25 de Ataque";
-        if(jugador.getDinero() < 150){
+        if(jugador.getDinero() > 150){
             JOptionPane.showMessageDialog(null, mensaje);
-            jugador.setDinero(jugador.getDinero() - 150);
-            jugador.setDefensa(jugador.getDefensa() + 25);
-            jugador.setAtaque(jugador.getAtaque() + 25);
+            
+            
+            int porcentaje = jugador.getHonor()/5;
+            
+            if (porcentaje >= 60) {
+                jugador.setDinero(jugador.getDinero() - 110);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setDefensa(jugador.getDefensa() + 25);
+                DefText.setText(String.valueOf(jugador.getDefensa()));
+            
+                jugador.setAtaque(jugador.getAtaque() + 25);
+                AtaqText.setText(String.valueOf(jugador.getAtaque()));
+            } else {
+                jugador.setDinero(jugador.getDinero() - 150);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setDefensa(jugador.getDefensa() + 25);
+                DefText.setText(String.valueOf(jugador.getDefensa()));
+            
+                jugador.setAtaque(jugador.getAtaque() + 25);
+                AtaqText.setText(String.valueOf(jugador.getAtaque()));
+            }                    
         }else{            
             JOptionPane.showMessageDialog(null, no);
         }
@@ -1551,11 +1883,30 @@ public class Pantalla extends javax.swing.JFrame {
                        + "Precio = 250" 
                        + "Agrega 50 de Defensa"
                        + "Agrega 50 de Ataque";
-        if(jugador.getDinero() < 250){
+        if(jugador.getDinero() > 250){
             JOptionPane.showMessageDialog(null, mensaje);
-            jugador.setDinero(jugador.getDinero() - 250);
-            jugador.setDefensa(jugador.getDefensa() + 50);
-            jugador.setAtaque(jugador.getAtaque() + 50);
+            
+            int porcentaje = jugador.getHonor()/5;
+            
+            if (porcentaje >= 60) {
+                jugador.setDinero(jugador.getDinero() - 210);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setDefensa(jugador.getDefensa() + 50);
+                DefText.setText(String.valueOf(jugador.getDefensa()));
+            
+                jugador.setAtaque(jugador.getAtaque() + 50);
+                AtaqText.setText(String.valueOf(jugador.getAtaque()));
+            } else {
+                jugador.setDinero(jugador.getDinero() - 250);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setDefensa(jugador.getDefensa() + 50);
+                DefText.setText(String.valueOf(jugador.getDefensa()));
+            
+                jugador.setAtaque(jugador.getAtaque() + 50);
+                AtaqText.setText(String.valueOf(jugador.getAtaque()));
+            }                    
         }else{            
             JOptionPane.showMessageDialog(null, no);
         }
@@ -1571,11 +1922,30 @@ public class Pantalla extends javax.swing.JFrame {
                        + "Precio = 250" 
                        + "Agrega 25 de Defensa"
                        + "Agrega 75 de Ataque";
-        if(jugador.getDinero() < 250){
+        if(jugador.getDinero() > 250){
             JOptionPane.showMessageDialog(null, mensaje);
-            jugador.setDinero(jugador.getDinero() - 250);
-            jugador.setDefensa(jugador.getDefensa() + 25);
-            jugador.setAtaque(jugador.getAtaque() + 75);
+            
+            int porcentaje = jugador.getHonor()/5;
+            
+            if (porcentaje >= 60) {
+                jugador.setDinero(jugador.getDinero() - 210);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setDefensa(jugador.getDefensa() + 25);
+                DefText.setText(String.valueOf(jugador.getDefensa()));
+            
+                jugador.setAtaque(jugador.getAtaque() + 75);
+                AtaqText.setText(String.valueOf(jugador.getAtaque()));
+            } else {
+                jugador.setDinero(jugador.getDinero() - 250);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setDefensa(jugador.getDefensa() + 25);
+                DefText.setText(String.valueOf(jugador.getDefensa()));
+            
+                jugador.setAtaque(jugador.getAtaque() + 75);
+                AtaqText.setText(String.valueOf(jugador.getAtaque()));
+            }                    
         }else{            
             JOptionPane.showMessageDialog(null, no);
         }
@@ -1589,10 +1959,24 @@ public class Pantalla extends javax.swing.JFrame {
         String no = "No tiene suficiente dinero"
                        + "Precio = 150" 
                        + "Agrega 100 de Ataque";
-        if(jugador.getDinero() < 200){
+        if(jugador.getDinero() > 200){
             JOptionPane.showMessageDialog(null, mensaje);
-            jugador.setDinero(jugador.getDinero() - 150);
-            jugador.setAtaque(jugador.getAtaque() + 100);
+            
+            int porcentaje = jugador.getHonor()/5;
+            
+            if (porcentaje >= 60) {
+                jugador.setDinero(jugador.getDinero() - 110);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setAtaque(jugador.getAtaque() + 100);
+                AtaqText.setText(String.valueOf(jugador.getAtaque())); 
+            } else {
+                jugador.setDinero(jugador.getDinero() - 150);
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+            
+                jugador.setAtaque(jugador.getAtaque() + 100);
+                AtaqText.setText(String.valueOf(jugador.getAtaque())); 
+            }                   
         }else{            
             JOptionPane.showMessageDialog(null, no);
         }
@@ -1618,26 +2002,37 @@ public class Pantalla extends javax.swing.JFrame {
             int recursosObtenidos = random.nextInt(4) + 1;
             for (int i = 0; i < recursosObtenidos; i++) {
                 int probabilidad = random.nextInt(100) + 1;
-                if (probabilidad <= 25) {
+                if (probabilidad <= 20) {
                     inventario.agregarFlores(1);
+                    FlorText.setText(String.valueOf(inventario.getFlores()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 flor.");
-                } else if (probabilidad <= 50) {
+                } else if (probabilidad > 20 &&probabilidad <= 40) {
                     inventario.agregarMadera(1);
+                    MaderaText.setText(String.valueOf(inventario.getMadera()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 unidad de madera.");
-                } else if (probabilidad <= 60) {
+                } else if (probabilidad > 40 && probabilidad <= 50) {
                     inventario.agregarArmaduras(1);
+                    MadText.setText(String.valueOf(inventario.getArmaduras()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 armadura.");
-                } else if (probabilidad <= 70) {
+                } else if (probabilidad > 50 && probabilidad <= 60) {
+                    inventario.agregarArmas(1);
+                    ArmaText.setText(String.valueOf(inventario.getArmas()));
+                    JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 arma.");
+                } else if (probabilidad > 60 && probabilidad <= 70) {
                     inventario.agregarPociones(1);
+                    PocText.setText(String.valueOf(inventario.getPociones()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 pocion.");
-                } else if (probabilidad <= 75) {
+                } else if (probabilidad > 70 && probabilidad <= 75) {
                     inventario.agregarObjetos_magicos(1);
+                    ObMText.setText(String.valueOf(inventario.getObjetos_magicos()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 objeto magico.");
-                } else if (probabilidad <= 80) {
+                } else if (probabilidad > 75 && probabilidad <= 80) {
                     inventario.agregarObjetos_miticos(1);
+                    ObMcText.setText(String.valueOf(inventario.getObjetos_miticos()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 objeto mitico.");
                 } else if (probabilidad <= 85) {
                     inventario.agregarPiedras_Preciosas(1);
+                    PPText.setText(String.valueOf(inventario.getPiedras_preciosas()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 piedra preciosa.");
                 } else {
                     JOptionPane.showMessageDialog(null, "No encontraste nada. ¡Suerte la proxima vez!");
@@ -1652,18 +2047,23 @@ public class Pantalla extends javax.swing.JFrame {
                 int probabilidad = random.nextInt(100) + 1;
                 if (probabilidad <= 40) {
                     inventario.agregarFlores(1);
+                    FlorText.setText(String.valueOf(inventario.getFlores()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 flor.");
                 } else if (probabilidad <= 80) {
                     inventario.agregarMadera(1);
+                    MaderaText.setText(String.valueOf(inventario.getMadera()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 unidad de madera.");
                 } else if (probabilidad <= 85) {
                     inventario.agregarObjetos_magicos(1);
+                    ObMText.setText(String.valueOf(inventario.getObjetos_magicos()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 objeto magico.");
                 } else if (probabilidad <= 90) {
                     inventario.agregarObjetos_miticos(1);
+                    ObMcText.setText(String.valueOf(inventario.getObjetos_miticos()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 objeto mitico.");
                 } else if (probabilidad <= 95) {
                     inventario.agregarPiedras_Preciosas(1);
+                    PPText.setText(String.valueOf(inventario.getPiedras_preciosas()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 piedra preciosa.");
                 } else {
                     JOptionPane.showMessageDialog(null, "No encontraste nada. ¡Suerte la proxima vez!");
@@ -1686,26 +2086,37 @@ public class Pantalla extends javax.swing.JFrame {
             int recursosObtenidos = random.nextInt(4) + 1;
             for (int i = 0; i < recursosObtenidos; i++) {
                 int probabilidad = random.nextInt(100) + 1;
-                if (probabilidad <= 25) {
+                if (probabilidad <= 20) {
                     inventario.agregarFlores(1);
+                    FlorText.setText(String.valueOf(inventario.getFlores()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 flor.");
-                } else if (probabilidad <= 50) {
+                } else if (probabilidad > 20 &&probabilidad <= 40) {
                     inventario.agregarMadera(1);
+                    MaderaText.setText(String.valueOf(inventario.getMadera()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 unidad de madera.");
-                } else if (probabilidad <= 60) {
+                } else if (probabilidad > 40 && probabilidad <= 50) {
                     inventario.agregarArmaduras(1);
+                    MadText.setText(String.valueOf(inventario.getArmaduras()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 armadura.");
-                } else if (probabilidad <= 70) {
+                } else if (probabilidad > 50 && probabilidad <= 60) {
+                    inventario.agregarArmas(1);
+                    ArmaText.setText(String.valueOf(inventario.getArmas()));
+                    JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 arma.");
+                } else if (probabilidad > 60 && probabilidad <= 70) {
                     inventario.agregarPociones(1);
+                    PocText.setText(String.valueOf(inventario.getPociones()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 pocion.");
-                } else if (probabilidad <= 75) {
+                } else if (probabilidad > 70 && probabilidad <= 75) {
                     inventario.agregarObjetos_magicos(1);
+                    ObMText.setText(String.valueOf(inventario.getObjetos_magicos()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 objeto magico.");
-                } else if (probabilidad <= 80) {
+                } else if (probabilidad > 75 && probabilidad <= 80) {
                     inventario.agregarObjetos_miticos(1);
+                    ObMcText.setText(String.valueOf(inventario.getObjetos_miticos()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 objeto mitico.");
                 } else if (probabilidad <= 85) {
                     inventario.agregarPiedras_Preciosas(1);
+                    PPText.setText(String.valueOf(inventario.getPiedras_preciosas()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 piedra preciosa.");
                 } else {
                     JOptionPane.showMessageDialog(null, "No encontraste nada. ¡Suerte la proxima vez!");
@@ -1720,18 +2131,23 @@ public class Pantalla extends javax.swing.JFrame {
                 int probabilidad = random.nextInt(100) + 1;
                 if (probabilidad <= 40) {
                     inventario.agregarFlores(1);
+                    FlorText.setText(String.valueOf(inventario.getFlores()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 flor.");
                 } else if (probabilidad <= 80) {
                     inventario.agregarMadera(1);
+                    MaderaText.setText(String.valueOf(inventario.getMadera()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 unidad de madera.");
                 } else if (probabilidad <= 85) {
                     inventario.agregarObjetos_magicos(1);
+                    ObMText.setText(String.valueOf(inventario.getObjetos_magicos()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 objeto magico.");
                 } else if (probabilidad <= 90) {
                     inventario.agregarObjetos_miticos(1);
+                    ObMcText.setText(String.valueOf(inventario.getObjetos_miticos()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 objeto mitico.");
                 } else if (probabilidad <= 95) {
                     inventario.agregarPiedras_Preciosas(1);
+                    PPText.setText(String.valueOf(inventario.getPiedras_preciosas()));
                     JOptionPane.showMessageDialog(null, "Se ha encontrado y almacenado 1 piedra preciosa.");
                 } else {
                     JOptionPane.showMessageDialog(null, "No encontraste nada. ¡Suerte la proxima vez!");
@@ -1755,10 +2171,10 @@ public class Pantalla extends javax.swing.JFrame {
 
     private void VenderUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VenderUActionPerformed
         // TODO add your handling code here:
-        String[] opciones = {"Si quieres vender unidades (0)", "No quieres vender unidades (1)"};
+        String[] opciones = {"Si quieres vender unidades? ", "No quieres vender unidades ?"};
         int seleccion = JOptionPane.showOptionDialog(null,
-                "Elige una opción:", 
-                "Seleccionar Opción", 
+                "Elige una opcion:", 
+                "Seleccionar Opcion", 
                 JOptionPane.DEFAULT_OPTION, 
                 JOptionPane.INFORMATION_MESSAGE, 
                 null, 
@@ -1771,8 +2187,9 @@ public class Pantalla extends javax.swing.JFrame {
         } else if (seleccion == 1) {
             JOptionPane.showMessageDialog(null, "Has seleccionado: " + opciones[seleccion]);
         } else {
-            JOptionPane.showMessageDialog(null, "No se ha seleccionado ninguna opción.");
+            JOptionPane.showMessageDialog(null, "No se ha seleccionado ninguna opcion.");
         }
+        UnidadesJugador(jugador,UnidadesText);
     }//GEN-LAST:event_VenderUActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -1782,8 +2199,423 @@ public class Pantalla extends javax.swing.JFrame {
         if (resul) {
             tieneAlianza = true; 
         }
+        int fv = contarFaccionesVivas();                
+        FacVivas.setText(String.valueOf(fv));
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void ComprarUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComprarUActionPerformed
+        // TODO add your handling code here:
+        String[] opciones = {"Sí", "No"};
+        int seleccion = JOptionPane.showOptionDialog(null,
+                "¿Quieres comprar unidades?", 
+                "Seleccionar Opcion", 
+                JOptionPane.DEFAULT_OPTION, 
+                JOptionPane.INFORMATION_MESSAGE, 
+                null, 
+                opciones, 
+                opciones[0]);
+
+        if (seleccion == 0) {
+            ArrayList<Unidad> unidadesDisponibles = getUnidades(); 
+            StringBuilder opcionesUnidades = new StringBuilder("-- Comprar unidades --\n");
+            for (int i = 0; i < unidadesDisponibles.size(); i++) {
+                Unidad unidad = unidadesDisponibles.get(i);
+                opcionesUnidades.append((i + 1) + ") " + unidad.getNombre() + " - Costo: " + unidad.getCosto() + "\n");
+            }
+            opcionesUnidades.append("0) Salir.");
+            
+            String seleccionStr = JOptionPane.showInputDialog(null, opcionesUnidades.toString(), "Seleccionar unidad", JOptionPane.INFORMATION_MESSAGE);
+
+            if (seleccionStr != null && !seleccionStr.trim().isEmpty()) {
+                try {
+                    int seleccionUnidad = Integer.parseInt(seleccionStr);
+                    if (seleccionUnidad >= 1 && seleccionUnidad <= unidadesDisponibles.size()) {
+                        Unidad unidadSeleccionada = unidadesDisponibles.get(seleccionUnidad - 1);
+                    
+                        String cantidadStr = JOptionPane.showInputDialog(null, "¿Cuántas unidades deseas comprar de " + unidadSeleccionada.getNombre() + "?", "Cantidad", JOptionPane.INFORMATION_MESSAGE);
+                    
+                        if (cantidadStr != null && !cantidadStr.trim().isEmpty()) {
+                            int cantidad = Integer.parseInt(cantidadStr);
+                            int totalCosto = unidadSeleccionada.getCosto() * cantidad;
+                            
+                            if (jugador.getRecursos() >= totalCosto) {
+                                jugador.restarRecursos(totalCosto); 
+                                jugador.agregarUnidad(unidadSeleccionada, cantidad);                                 
+                                
+                                JOptionPane.showMessageDialog(null, "Has comprado " + cantidad + " unidades de " + unidadSeleccionada.getNombre() + ". Total gastado: " + totalCosto);
+                                RecurJug.setText(String.valueOf(jugador.getRecursos()));
+                                
+                                int po = calcularPoderTotal(jugador.getUnidades());                            
+                                PoderJug.setText(String.valueOf(po));
+                            } else {
+                                JOptionPane.showMessageDialog(null, "No tienes suficiente dinero para esta compra.");
+                            }
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Operacion cancelada.");
+                        }
+                    } else if (seleccionUnidad == 0) {
+                        return;
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Seleccion no valida.");
+                    }
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(null, "Por favor, ingrese un numero valido.");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Operacion cancelada.");
+            }
+        } else if (seleccion == 1) {
+            JOptionPane.showMessageDialog(null, "Has decidido no comprar unidades.");
+        } else {
+            JOptionPane.showMessageDialog(null, "No se ha seleccionado ninguna opcion.");
+        }
+        UnidadesJugador(jugador, UnidadesText);                       
+    }//GEN-LAST:event_ComprarUActionPerformed
+
+    private void jLabel92MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel92MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel92MouseClicked
+
+    private void AtaqMetMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtaqMetMouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Seleccione una faccion para atacar:");
+        StringBuilder opciones = new StringBuilder();
+        for (int i = 0; i < facciones.size(); i++) {
+            opciones.append((i + 1) + ") " + facciones.get(i).getNombre() + "\n");
+        }
+        
+        String seleccionStr = JOptionPane.showInputDialog(null, opciones.toString(), "Seleccionar Faccion", JOptionPane.QUESTION_MESSAGE);
+        int seleccion = Integer.parseInt(seleccionStr);
+
+        if (seleccion >= 1 && seleccion <= facciones.size()) {
+            Facciones enemigo = facciones.get(seleccion - 1);
+            Facciones jugadorFaccion = jugador.getRazaSeleccionada();
+            
+            int poderJugador = calcularPoderTotal(unidades);
+            int poderEnemigo = calcularPoderTotal(enemigo.getUnidades());
+            
+            StringBuilder resultado = new StringBuilder();
+            resultado.append("Atacando a la faccion ").append(enemigo.getNombre()).append("\n");
+            resultado.append("Poder total del jugador: ").append(poderJugador).append("\n");
+            resultado.append("Poder total del enemigo: ").append(poderEnemigo).append("\n");
+
+            if (poderJugador > poderEnemigo) {
+                resultado.append("¡Victoria! Has derrotado a la faccion ").append(enemigo.getNombre()).append("\n");
+        
+                jugador.aumentarHonor(30);
+                HonJug.setText(String.valueOf(jugador.getHonor()));
+                
+                jugador.aumentarRecursos(enemigo.getRecursos());
+                RecurJug.setText(String.valueOf(jugador.getRecursos()));
+                
+                jugador.aumentarDinero(enemigo.getDinero());
+                DineroJug.setText(String.valueOf(jugador.getDinero()));
+                
+                facciones.remove(enemigo);
+                int fv = contarFaccionesVivas();
+                FacVivas.setText(String.valueOf(fv));                
+            } else if (poderJugador < poderEnemigo) {
+                resultado.append("Has sido derrotado por la faccion ").append(enemigo.getNombre()).append("\n");
+                EstaF(jugador);
+                JOptionPane.showMessageDialog(null, "Perdiste", "Suerte la proxima partida", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                resultado.append("La batalla ha terminado en empate.\n");
+            }
+
+            if (facciones.isEmpty()) {
+                resultado.append("Has derrotado a todas las facciones enemigas. ¡Felicidades!");
+                JOptionPane.showMessageDialog(null, resultado.toString(), "Fin del Juego", JOptionPane.INFORMATION_MESSAGE);
+                System.exit(0);
+            } else {
+                JOptionPane.showMessageDialog(null, resultado.toString(), "Resultado de la Batalla", JOptionPane.INFORMATION_MESSAGE);
+                int respuesta = JOptionPane.showConfirmDialog(null, "¿Deseas atacar otra faccion?", "Continuar", JOptionPane.YES_NO_OPTION);
+                if (respuesta == JOptionPane.YES_OPTION) {
+                    AtaqMetMouseClicked(evt);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Terminaste el ataque. Sigue conquistando el mundo guerrero.", "Fin", JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+        }
+    }//GEN-LAST:event_AtaqMetMouseClicked
+
+    private void V2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V2ActionPerformed
+        // TODO add your handling code here:
+        if (inventario.getFlores() > 0) {
+            String input = JOptionPane.showInputDialog("¿Cuantas flores deseas vender?");
+
+            if (input == null) {
+                return; 
+            }
+
+            try {
+                int Venta = Integer.parseInt(input);
+
+                if (Venta <= 0) {
+                    JOptionPane.showMessageDialog(null, "Debes vender al menos 1 flor.");
+                } else if (Venta > inventario.getFlores()) {
+                    JOptionPane.showMessageDialog(null, "No tienes suficientes flores para vender esa cantidad.");
+                } else {
+                    int ganancias = Venta * 10;
+                    inventario.venderFlores(Venta);
+                    jugador.aumentarDinero(ganancias);
+
+                    JOptionPane.showMessageDialog(null, "¡Felicidades! Vendiste " + Venta +
+                            " flores por " + ganancias + " monedas.\n" +
+                            "Ahora tienes " + inventario.getFlores() + " flores y " + jugador.getDinero() + " de dinero.");
+                }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, ingresa un numero valido.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No tienes Flores para vender");
+        }
+    }//GEN-LAST:event_V2ActionPerformed
+
+    private void V3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V3ActionPerformed
+        // TODO add your handling code here:
+        if (inventario.getMadera() > 0) {
+            String input = JOptionPane.showInputDialog("¿Cuanta madera deseas vender?");
+
+            if (input == null) {
+                return; 
+            }
+
+            try {
+                int Venta = Integer.parseInt(input);
+
+                if (Venta <= 0) {
+                    JOptionPane.showMessageDialog(null, "Debes vender al menos 1 de madera.");
+                } else if (Venta > inventario.getMadera()) {
+                    JOptionPane.showMessageDialog(null, "No tienes suficientes madera para vender esa cantidad.");
+                } else {
+                    int ganancias = Venta * 10;
+                    inventario.venderMadera(Venta);
+                    jugador.aumentarDinero(ganancias);
+
+                    JOptionPane.showMessageDialog(null, "¡Felicidades! Vendiste " + Venta +
+                            " madera por " + ganancias + " monedas.\n" +
+                            "Ahora tienes " + inventario.getMadera() + " de madera y " + jugador.getDinero() + " de dinero.");
+                }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, ingresa un numero valido.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No tienes madera para vender");
+        }
+    }//GEN-LAST:event_V3ActionPerformed
+
+    private void V4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V4ActionPerformed
+        // TODO add your handling code here:
+        if (inventario.getPiedras_preciosas() > 0) {
+            String input = JOptionPane.showInputDialog("¿Cuanta piedras preciosas deseas vender?");
+
+            if (input == null) {
+                return; 
+            }
+
+            try {
+                int Venta = Integer.parseInt(input);
+
+                if (Venta <= 0) {
+                    JOptionPane.showMessageDialog(null, "Debes vender al menos 1 piedra preciosa.");
+                } else if (Venta > inventario.getPiedras_preciosas()) {
+                    JOptionPane.showMessageDialog(null, "No tienes suficientes piedras preciosas para vender esa cantidad.");
+                } else {
+                    int ganancias = Venta * 10;
+                    inventario.venderPiedras_Preciosas(Venta);
+                    jugador.aumentarDinero(ganancias);
+
+                    JOptionPane.showMessageDialog(null, "¡Felicidades! Vendiste " + Venta +
+                            " piedras preciosas por " + ganancias + " monedas.\n" +
+                            "Ahora tienes " + inventario.getPiedras_preciosas() + " piedras preciosas y " + jugador.getDinero() + " de dinero.");
+                }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, ingresa un numero valido.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No tienes piedras preciosas para vender");
+        }
+    }//GEN-LAST:event_V4ActionPerformed
+
+    private void V5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V5ActionPerformed
+        // TODO add your handling code here:
+        if (inventario.getObjetos_magicos() > 0) {
+            String input = JOptionPane.showInputDialog("¿Cuantos objetos magicos deseas vender?");
+
+            if (input == null) {
+                return; 
+            }
+
+            try {
+                int Venta = Integer.parseInt(input);
+
+                if (Venta <= 0) {
+                    JOptionPane.showMessageDialog(null, "Debes vender al menos 1 objeto magico.");
+                } else if (Venta > inventario.getObjetos_magicos()) {
+                    JOptionPane.showMessageDialog(null, "No tienes suficientes objetos magicos para vender esa cantidad.");
+                } else {
+                    int ganancias = Venta * 10;
+                    inventario.venderObjetos_magicos(Venta);
+                    jugador.aumentarDinero(ganancias);
+
+                    JOptionPane.showMessageDialog(null, "¡Felicidades! Vendiste " + Venta +
+                            " objetos magicos por " + ganancias + " monedas.\n" +
+                            "Ahora tienes " + inventario.getObjetos_magicos() + " objetos magicos y " + jugador.getDinero() + " de dinero.");
+                }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, ingresa un numero valido.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No tienes objetos magicos para vender");
+        }
+    }//GEN-LAST:event_V5ActionPerformed
+
+    private void V6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V6ActionPerformed
+        // TODO add your handling code here:
+        if (inventario.getObjetos_miticos() > 0) {
+            String input = JOptionPane.showInputDialog("¿Cuantos objetos miticos deseas vender?");
+
+            if (input == null) {
+                return; 
+            }
+
+            try {
+                int Venta = Integer.parseInt(input);
+
+                if (Venta <= 0) {
+                    JOptionPane.showMessageDialog(null, "Debes vender al menos 1 objeto mitico.");
+                } else if (Venta > inventario.getObjetos_miticos()) {
+                    JOptionPane.showMessageDialog(null, "No tienes suficientes objetos miticos para vender esa cantidad.");
+                } else {
+                    int ganancias = Venta * 10;
+                    inventario.venderObjetos_miticos(Venta);
+                    jugador.aumentarDinero(ganancias);
+
+                    JOptionPane.showMessageDialog(null, "¡Felicidades! Vendiste " + Venta +
+                            " objetos miticos por " + ganancias + " monedas.\n" +
+                            "Ahora tienes " + inventario.getObjetos_miticos() + " objetos miticos y " + jugador.getDinero() + " de dinero.");
+                }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, ingresa un numero valido.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No tienes objetos miticos para vender");
+        }
+    }//GEN-LAST:event_V6ActionPerformed
+
+    private void V7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V7ActionPerformed
+        // TODO add your handling code here:
+        if (inventario.getArmas() > 0) {
+            String input = JOptionPane.showInputDialog("¿Cuantos armas deseas vender?");
+
+            if (input == null) {
+                return; 
+            }
+
+            try {
+                int Venta = Integer.parseInt(input);
+
+                if (Venta <= 0) {
+                    JOptionPane.showMessageDialog(null, "Debes vender al menos 1 arma.");
+                } else if (Venta > inventario.getArmas()) {
+                    JOptionPane.showMessageDialog(null, "No tienes suficientes armas para vender esa cantidad.");
+                } else {
+                    int ganancias = Venta * 10;
+                    inventario.venderArmas(Venta);
+                    jugador.aumentarDinero(ganancias);
+
+                    JOptionPane.showMessageDialog(null, "¡Felicidades! Vendiste " + Venta +
+                            " armas por " + ganancias + " monedas.\n" +
+                            "Ahora tienes " + inventario.getArmas() + " armas y " + jugador.getDinero() + " de dinero.");
+                }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, ingresa un numero valido.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No tienes armas para vender");
+        }
+    }//GEN-LAST:event_V7ActionPerformed
+
+    private void V8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V8ActionPerformed
+        // TODO add your handling code here:
+        if (inventario.getArmaduras() > 0) {
+            String input = JOptionPane.showInputDialog("¿Cuantos armaduras deseas vender?");
+
+            if (input == null) {
+                return; 
+            }
+
+            try {
+                int Venta = Integer.parseInt(input);
+
+                if (Venta <= 0) {
+                    JOptionPane.showMessageDialog(null, "Debes vender al menos 1 armadura.");
+                } else if (Venta > inventario.getArmaduras()) {
+                    JOptionPane.showMessageDialog(null, "No tienes suficientes armaduras para vender esa cantidad.");
+                } else {
+                    int ganancias = Venta * 10;
+                    inventario.venderArmaduras(Venta);
+                    jugador.aumentarDinero(ganancias);
+
+                    JOptionPane.showMessageDialog(null, "¡Felicidades! Vendiste " + Venta +
+                            " armaduras por " + ganancias + " monedas.\n" +
+                            "Ahora tienes " + inventario.getArmaduras() + " armaduras y " + jugador.getDinero() + " de dinero.");
+                }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, ingresa un numero valido.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No tienes armaduras para vender");
+        }
+    }//GEN-LAST:event_V8ActionPerformed
+
+    private void V1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V1ActionPerformed
+        // TODO add your handling code here:
+        if (inventario.getPociones() > 0) {
+            String input = JOptionPane.showInputDialog("¿Cuantos pociones deseas vender?");
+
+            if (input == null) {
+                return; 
+            }
+
+            try {
+                int Venta = Integer.parseInt(input);
+
+                if (Venta <= 0) {
+                    JOptionPane.showMessageDialog(null, "Debes vender al menos 1 pocion.");
+                } else if (Venta > inventario.getPociones()) {
+                    JOptionPane.showMessageDialog(null, "No tienes suficientes pociones para vender esa cantidad.");
+                } else {
+                    int ganancias = Venta * 10;
+                    inventario.venderPociones(Venta);
+                    jugador.aumentarDinero(ganancias);
+
+                    JOptionPane.showMessageDialog(null, "¡Felicidades! Vendiste " + Venta +
+                            " pociones por " + ganancias + " monedas.\n" +
+                            "Ahora tienes " + inventario.getPociones() + " pociones y " + jugador.getDinero() + " de dinero.");
+                }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, ingresa un numero valido.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No tienes pociones para vender");
+        }
+    }//GEN-LAST:event_V1ActionPerformed
+    
+    
+    private void EstaF(Jugador jugador) {
+        StringBuilder estadisticas = new StringBuilder();
+        estadisticas.append("Nombre de la faccion: ").append(jugador.getRazaSeleccionada().getNombre()).append("\n");
+        estadisticas.append("Dinero de la faccion: ").append(jugador.getDinero()).append("\n");
+        estadisticas.append("Recursos de la faccion: ").append(jugador.getRecursos()).append("\n");
+
+        int poderTotalFinal = calcularPoderTotal(unidades);
+        estadisticas.append("Poder total final: ").append(poderTotalFinal).append("\n");
+        estadisticas.append("Facciones restantes: ").append(facciones.size()).append("\n");
+
+        JOptionPane.showMessageDialog(null, estadisticas.toString(), "Estadísticas Finales", JOptionPane.INFORMATION_MESSAGE);
+    }
+    
     public boolean hacerAlianza(Jugador jugador, ArrayList<Facciones> facciones) {
         if (tieneAlianza) {
             JOptionPane.showMessageDialog(null, "Solo puedes hacer una alianza.");
@@ -1795,12 +2627,12 @@ public class Pantalla extends javax.swing.JFrame {
             return false; 
         }
 
-        StringBuilder opciones = new StringBuilder("Seleccione una facción enemiga para hacer alianza:\n");
+        StringBuilder opciones = new StringBuilder("Seleccione una faccion enemiga para hacer alianza:\n");
         for (int i = 0; i < facciones.size(); i++) {
             opciones.append((i + 1) + ") " + facciones.get(i).getNombre() + "\n");
         }
 
-        String seleccionStr = JOptionPane.showInputDialog(null, opciones.toString(), "Seleccionar facción", JOptionPane.INFORMATION_MESSAGE);
+        String seleccionStr = JOptionPane.showInputDialog(null, opciones.toString(), "Seleccionar faccion", JOptionPane.INFORMATION_MESSAGE);
 
         if (seleccionStr != null && !seleccionStr.trim().isEmpty()) {
             try {
@@ -1809,19 +2641,18 @@ public class Pantalla extends javax.swing.JFrame {
                     Facciones aliado = facciones.get(seleccion - 1);
                     jugador.hacerAlianza(aliado);
                     facciones.remove(aliado);
-                    JOptionPane.showMessageDialog(null, "Ahora estás aliado con " + aliado.getNombre());
+                    JOptionPane.showMessageDialog(null, "Ahora estas aliado con " + aliado.getNombre());
                     return true; 
                 } else {
-                    JOptionPane.showMessageDialog(null, "Selección no válida.");
+                    JOptionPane.showMessageDialog(null, "Seleccion no valida.");
                 }
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Por favor, ingrese un número válido.");
+                JOptionPane.showMessageDialog(null, "Por favor, ingrese un numero valido.");
             }
         } else {
-            JOptionPane.showMessageDialog(null, "Operación cancelada.");
-        }
-
-        return false; 
+            JOptionPane.showMessageDialog(null, "Operacion cancelada.");
+        }        
+        return false;                 
     }
     
     public static int contarFaccionesVivas() {
@@ -1853,11 +2684,20 @@ public class Pantalla extends javax.swing.JFrame {
     }
     private static int calcularPoderTotal(ArrayList<Unidad> unidades) {
         int poderTotal = 0;
+
         for (Unidad unidad : unidades) {
-            poderTotal += unidad.getPoder();
+            int poderUnidad = unidad.getPoder(); 
+            poderTotal += poderUnidad;       
+            poderTotal += (unidad.getCantidad() - 1); 
         }
+
         return poderTotal;
     }
+    
+    private ArrayList<Unidad> getUnidades() {
+        return Jugador.unidades; 
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -1893,19 +2733,21 @@ public class Pantalla extends javax.swing.JFrame {
         });        
         
         ArrayList<Mercado> articulosMercado = new ArrayList<>();
-        articulosMercado.add(new Mercado("Objetos mágicos", 10, 100, "Tienda de Magia"));
-        articulosMercado.add(new Mercado("Armas", 15, 150, "Armería"));
+        articulosMercado.add(new Mercado("Objetos magicos", 10, 100, "Tienda de Magia"));
+        articulosMercado.add(new Mercado("Armas", 15, 150, "Armeria"));
         articulosMercado.add(new Mercado("Pociones", 20, 50, "Alquimia"));
-        articulosMercado.add(new Mercado("Armaduras", 10, 100, "Armería"));
-        articulosMercado.add(new Mercado("Piedras Preciosas", 5, 500, "Joyería"));
+        articulosMercado.add(new Mercado("Armaduras", 10, 100, "Armeria"));
+        articulosMercado.add(new Mercado("Piedras Preciosas", 5, 500, "Joyeria"));
         
                 
                 
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ArmaText;
     private javax.swing.JButton Armaduras;
     private javax.swing.JButton Armas;
+    private javax.swing.JLabel AtaqMet;
     private javax.swing.JLabel AtaqText;
     private javax.swing.JLabel BeastmenLogo;
     private javax.swing.JLabel Bosque;
@@ -1914,6 +2756,7 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel ChaosDwarfsLogo;
     private javax.swing.JDialog CompOb;
     private javax.swing.JButton Comprar;
+    private javax.swing.JButton ComprarU;
     private javax.swing.JLabel DarkElvesLogo;
     private javax.swing.JDialog Decision;
     private javax.swing.JLabel DefText;
@@ -1922,6 +2765,7 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel EmpireLogo;
     private javax.swing.JTextField FacSelec;
     private javax.swing.JLabel FacVivas;
+    private javax.swing.JLabel FlorText;
     private javax.swing.JLabel GrandCathayLogo;
     private javax.swing.JLabel GreenskinsLogo;
     private javax.swing.JLabel HighElvesLogo;
@@ -1929,6 +2773,8 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel KhorneLogo;
     private javax.swing.JLabel KislevLogo;
     private javax.swing.JLabel LizardmenLogo;
+    private javax.swing.JLabel MadText;
+    private javax.swing.JLabel MaderaText;
     private javax.swing.JDialog Mapa;
     private javax.swing.JLabel MapaGen;
     private javax.swing.JPanel MerFalso;
@@ -1936,9 +2782,14 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel NomText;
     private javax.swing.JLabel NorscaLogo;
     private javax.swing.JLabel NurgleLogo;
+    private javax.swing.JLabel ObMText;
     private javax.swing.JButton ObMag;
+    private javax.swing.JLabel ObMcText;
     private javax.swing.JButton ObMit;
     private javax.swing.JLabel OgreKingdomLogo;
+    private javax.swing.JLabel PPText;
+    private javax.swing.JDialog Perdiste;
+    private javax.swing.JLabel PocText;
     private javax.swing.JButton Pociones;
     private javax.swing.JLabel PoderJug;
     private javax.swing.JLabel RecurJug;
@@ -1947,6 +2798,14 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel TombKingsLogo;
     private javax.swing.JLabel TzeentchLogo;
     private javax.swing.JLabel UnidadesText;
+    private javax.swing.JButton V1;
+    private javax.swing.JButton V2;
+    private javax.swing.JButton V3;
+    private javax.swing.JButton V4;
+    private javax.swing.JButton V5;
+    private javax.swing.JButton V6;
+    private javax.swing.JButton V7;
+    private javax.swing.JButton V8;
     private javax.swing.JLabel VampireCoastLogo;
     private javax.swing.JLabel VampireCountsLogo;
     private javax.swing.JDialog VendOb;
@@ -1957,6 +2816,16 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel104;
+    private javax.swing.JLabel jLabel105;
+    private javax.swing.JLabel jLabel106;
+    private javax.swing.JLabel jLabel107;
+    private javax.swing.JLabel jLabel108;
+    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -2045,10 +2914,21 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -2063,6 +2943,7 @@ public class Pantalla extends javax.swing.JFrame {
     static Inventario inventario = new Inventario ();
     static ArrayList<Facciones> facciones = new ArrayList<>();
     static ArrayList<Facciones> enemigos = new ArrayList<>();
+    static ArrayList<Unidad> unidades = new ArrayList<>();
     static String [] todasFacciones = {
         "The Empire", "Norsca", "Bretonnia", "Grand Cathay", "Kislev",
         "Dwarfs", "High Elves", "Wood Elves", "Lizardmen", "Khorne",
@@ -2076,5 +2957,175 @@ public class Pantalla extends javax.swing.JFrame {
     static int defensa;
     static int poder;
     private boolean tieneAlianza = false;
-       
+
+    public ArrayList<Unidad> agregarU(String nombreFaccion) {            
+            ArrayList<Unidad> unidades = new ArrayList<>();
+
+        switch (nombreFaccion) {
+            case "The Empire":
+                    unidades.add(new Unidad("Hijos de Sigmar",100,40,"Infanteria",random.nextInt(10)+50));                    
+                    unidades.add(new Unidad("Espaderos",90,40,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Herreuelos",40,60,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Gran Cañon",10,80,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Hechiero de la Luz",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Norsca":
+                    unidades.add(new Unidad("Barbaros",100,40,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Berserkers",90,75,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Jinetes Barbaros",40,53,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Carro de Barbaros con Lobos de Hielo",10,78,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Hechicero del Caos",1,1100,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Bretonnia":
+                    unidades.add(new Unidad("Turba de Campesinos",100,20,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Hombres de armas",90,25,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Guardiaes del Grial",40,160,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Trebuchet Bendecido",10,90,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Profetisa",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Grand Cathay":
+                    unidades.add(new Unidad("Jade Warriors",100,62,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Celestial Dragon Guard",90,80,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Peasant Horsemen",40,100,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Grand Cannon",10,105,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Alchemist",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Kislev":
+                    unidades.add(new Unidad("Tzar Guard",100,57,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Kislevite Warriors",90,60,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Kossovite",40,110,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Little Grom",10,95,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Frost Maiden",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Dwarfs":
+                    unidades.add(new Unidad("Guerreros Enanos",100,45,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Mineros",90,32,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Girobombardero",40,116,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Lanzaagravios",10,140,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Herrero Runico",1,1000,"Mago",random.nextInt(10)+250));
+                    break;                         
+                case "High Elves":
+                    unidades.add(new Unidad("Dryads",100,67,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Phoenix Guard",90,70,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Ellyrian Reavers",40,120,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Eagle Claw Bolt Throwers",10,115,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Hand of the Shadow Crown",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Wood Elves":
+                    unidades.add(new Unidad("Guardias Eternos",100,47,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Guardias Corazon del Invierno",90,80,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Jinetes Salvajes",40,110,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Jinetes de Halcon",10,95,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Cantor de Arboles",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Lizardmen":
+                    unidades.add(new Unidad("Red Crested Skinks",100,73,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Saurus Warriors",90,71,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Horned Ones",40,131,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Terradon Riders",10,108,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Lord Mazdamundi",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Khorne":
+                    unidades.add(new Unidad("Forsaken of Khorne",100,68,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Chosen of Khorne",90,110,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Chaos Knights of Khorne",40,121,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Blood Shrine of Khorne",10,135,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Bloodreaper",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Nurgle":
+                    unidades.add(new Unidad("Nurglings",100,50,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Pestigors",90,65,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Rot Knights",40,104,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Plague Drones of Nurgle",10,95,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Grukmur Three-Horn",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Tzeentch":
+                    unidades.add(new Unidad("Blue Horrors of Tzeentch",100,47,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Forsaken of Tzeentch",90,80,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Centigors of Tzeentch",40,110,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Exalted Pink Horrors of Tzeentch",10,95,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("The Changeling",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Slaanesh":
+                    unidades.add(new Unidad("Devoted Marauders of Slaanesh",100,65,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Daemonettes of Slaanesh",90,70,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("HeartSeekers of Slaanesh",40,110,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Seeker Chariots",10,101,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Cultist of Slaanesh",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Warriors of Chaos":
+                    unidades.add(new Unidad("Guardia de los Espejos",100,100,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Elegidos",90,140,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Espadas del Caos",40,180,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Alma de la Perdicion",10,140,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Hechicero del Caos",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Beastmen":
+                    unidades.add(new Unidad("Rebaño de Gors",100,60,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Rebaño de Bestigors",90,100,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Centigors",40,85,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Cigor",10,160,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Chaman del Rebaño",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Skaven":
+                    unidades.add(new Unidad("Gutter Runners Slingers",100,55,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Death Globe Bombardiers",90,74,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Wolf Rats",40,100,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Plagueclaw Catepults",10,85,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Packmaster",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Chaos Dwarfs":
+                    unidades.add(new Unidad("Goblin Labourers",100,61,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Infernal Ironsworn",90,78,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Bull Centaur Renders",40,98,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Dreadquake Mortar",10,92,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Gorduz Bakstabber",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Greenskins":
+                    unidades.add(new Unidad("Guerrero Orkoz",100,45,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Grandotez Orkoz",90,70,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Garrapatos Saltarines de los Goblins Nocturnos",40,65,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Katapulta de Goblins Voladorez",10,90,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Chaman Goblin Nocturno",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Dark Elves":
+                    unidades.add(new Unidad("Black Ark Corsairs",100,55,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Har Ganeth Executioners",90,84,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Cold One Knights",40,120,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Reaper Bolt Throwers",10,85,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Socreress",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Ogre Kingdom":
+                    unidades.add(new Unidad("Gnoblar",100,58,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Gnoblars Trappers",90,89,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Mournfang Cavalry",40,102,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Gnoblar Scraplauncher",10,73,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Firebelly",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                case "Vampire Coast":
+                    unidades.add(new Unidad("Zombie Pirate Deckhands Mob",100,57,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Depth Guard",90,92,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Dammed Knights of the Realm",40,113,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Queen Bess",10,101,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Cylostra Direfin",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Vampire Counts":
+                    unidades.add(new Unidad("Guerreros Esqueletos",100,30,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Guardia de los Tumulos",90,75,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Caballeros Sangrientos",40,170,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Sagrario Mortis",10,90,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Nigromante",1,1000,"Mago",random.nextInt(10)+250));
+                    break; 
+                case "Tomb Kings":
+                    unidades.add(new Unidad("Skeleton Warrios",100,58,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Tomb Guard",90,76,"Infanteria",random.nextInt(10)+50));
+                    unidades.add(new Unidad("Nehehara Horseman",40,103,"Caballeria",random.nextInt(10)+150));
+                    unidades.add(new Unidad("Screaming Skulls Catapults",10,105,"Artilleria",random.nextInt(10)+200));
+                    unidades.add(new Unidad("Liche Priest",1,1000,"Mago",random.nextInt(10)+250));
+                    break;
+                default:System.out.println("Faccion desconocida");
+                    break;
+        }
+        return unidades;        
+    }               
 }

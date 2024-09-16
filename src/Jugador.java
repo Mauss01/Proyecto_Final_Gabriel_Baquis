@@ -9,7 +9,7 @@ public class Jugador {
     static Scanner sc = new Scanner (System.in);
     static Inventario inventario = new Inventario();
     private Facciones razaSeleccionada;
-    private ArrayList<Unidad> unidades;
+    static ArrayList<Unidad> unidades;
     private int recursos;
     private int dinero;
     private int ataque;
@@ -148,7 +148,7 @@ public class Jugador {
                     JOptionPane.showMessageDialog(null, "Vendiste " + unidadSeleccionada.getNombre() 
                                                         + ". Dinero ganado: " + ganancia );
                 } else if (seleccion == 0) {
-                    Pantalla.Mercado(jugador, inventario);
+                    JOptionPane.showMessageDialog(null, "Saliendo de la venta.");
                 } else {
                     JOptionPane.showMessageDialog(null, "Seleccion no valida.");
                 }
@@ -171,5 +171,19 @@ public class Jugador {
 
     void aumentarRecursos(int recur) {
         recursos = recursos + recur;
+    }
+    public void restarRecursos(int cantidad){
+        recursos = recursos - cantidad;
+    }
+    
+    public void agregarUnidad(Unidad unidad, int cantidad) {
+        for (Unidad u : unidades) {
+            if (u.equals(unidad)) {
+                u.aumentarCantidad(cantidad);
+                return;
+            }
+        }
+        unidad.aumentarCantidad(cantidad); 
+        unidades.add(unidad);
     }
 }

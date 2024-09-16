@@ -8,13 +8,17 @@ public class Unidad {
     private int costo;
     private String tipo;
     private int poder;
+
+    public Unidad() {
+    }
+    
     
     public Unidad(String Nombre,int cantidad,int costo, String tipo, int poder){
         this.Nombre = Nombre;
         this.cantidad = cantidad;
         this.costo = costo;
         this.tipo = tipo;
-        this.poder = poder;
+        this.poder = poder + calcularPoder();
     }
     public Unidad(Unidad unidad) {
         this.Nombre = unidad.Nombre;
@@ -23,7 +27,29 @@ public class Unidad {
         this.tipo = unidad.tipo;
         this.poder = unidad.poder;
     }
-
+    
+    private int calcularPoder() {
+        int multiplicador;
+        switch (tipo.toLowerCase()) {
+            case "infanteria":
+                multiplicador = 1; 
+                break;
+            case "caballeria":
+                multiplicador = 2; 
+                break;
+            case "artilleria":
+                multiplicador = 4; 
+                break;
+            case "mago":
+                multiplicador = 5; 
+                break;
+            default:
+                multiplicador = 0; 
+                break;
+        }        
+        return (int) (cantidad * multiplicador);
+    }
+    
     public String getNombre() {
         return Nombre;
     }
@@ -69,4 +95,8 @@ public class Unidad {
     public String toString() {
         return "Nombre: " + Nombre + ", Tipo: " + tipo + ", Cantidad: " + cantidad + ", Poder: " + poder;
     }
+
+    public void aumentarCantidad(int cantidad) {
+        this.cantidad += cantidad;
+    }        
 }
